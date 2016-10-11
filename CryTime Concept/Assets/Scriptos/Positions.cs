@@ -6,8 +6,8 @@ using System;
 public class Positions : MonoBehaviour {
 
 	public GameObject player;
-	public Text StandBy;
-	public Text Engage;
+	public RawImage StandBy;
+	public RawImage Engage;
 	bool end = false;
 	public GameObject[] previousenemies;
 	public GameObject[] nextenemies;
@@ -16,6 +16,8 @@ public class Positions : MonoBehaviour {
 	public string trig;
 	bool enemyalive;
 	public string Trigger;
+
+	bool start = true;
 
 
 	// Use this for initialization
@@ -26,15 +28,20 @@ public class Positions : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
+			StandBy.GetComponent<TextFlash> ().stop = true;
+			StopCoroutine (StandBy.GetComponent<TextFlash> ().textflash (StandBy));
+			StandBy.gameObject.SetActive (false);
 			Engage.gameObject.SetActive (true);
 		} else {
 			Engage.gameObject.SetActive (false);
 		}
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Moving")) {
-			StandBy.gameObject.SetActive (true);
-		} else {
-			StandBy.gameObject.SetActive (false);
-		}
+			if (start) {
+				start = false;
+				StandBy.GetComponent<TextFlash> ().stop = false;
+				StartCoroutine (StandBy.GetComponent<TextFlash> ().textflash (StandBy));
+			}
+		} 
 		//checks the distance between the player and the position node
 		float dist = Vector3.Distance (transform.position, player.transform.position);
 		//makes sure that all enemies are dead before proceeding
@@ -61,8 +68,8 @@ public class Positions : MonoBehaviour {
 				foreach (GameObject obj in objects) {
 					obj.GetComponent<Animator> ().SetTrigger (Trigger);
 				}
-				player.GetComponent<Animator>().SetTrigger(trig);
 				foreach (GameObject enemy in nextenemies) {
+					player.GetComponent<Animator>().SetTrigger(trig);
 					enemy.GetComponent<EnemyScript> ().activate = true;
 				}
 				end = true;
@@ -74,5 +81,7 @@ public class Positions : MonoBehaviour {
 			}
 		}
 	}
+
+
 		
 }

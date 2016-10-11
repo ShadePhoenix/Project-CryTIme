@@ -41,16 +41,16 @@ public class Playerhit : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter(Collision col)
+	void OnTriggerEnter(Collider col)
 	{
 		//checks if bullets hit player
-		if (col.collider.tag == "Bullet") {
+		if (col.GetComponent<Collider>().tag == "Bullet") {
 			if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("OutOfCover")) {
 				StartCoroutine ("bullethit");
 				transform.GetComponent<Animator> ().SetTrigger ("Default");
 				//sets the effect to be in full, meaning the camera will be very blury
 				fade = true;
-				Destroy (col.collider.gameObject);
+				Destroy (col.GetComponent<Collider>().gameObject);
 				foreach (RawImage h in health) {
 					//removes a health bar if hit, if hit 3 times, all health will be gone
 					if (h.gameObject.activeSelf) {

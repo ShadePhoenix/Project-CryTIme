@@ -27,6 +27,11 @@ public class MoreEnemies : MonoBehaviour {
 				enemiesalive = false;
 			}
 		}
+		if (enemiesalive) {
+			foreach (GameObject enemy in nextenemies) {
+				enemy.GetComponent<EnemyScript>().activate = false;
+			}
+		}
 		//this code will only happen for the pos with the name "Pos (1)" it also makes sure all previous enemies are dead
 		if (this.name == "Pos (1)" && !enemiesalive) {
 			//stats the wait coroutine
@@ -35,6 +40,7 @@ public class MoreEnemies : MonoBehaviour {
 				if (!enemiesalive || enemies.Length <= 0) {
 				//moves players to specific points
 				foreach (GameObject enemy in nextenemies) {
+					enemy.GetComponent<EnemyScript>().activate = true;
 					enemy.GetComponent<Animator> ().SetTrigger (Trigger);
 				}
 				foreach (GameObject obj in objects) {
@@ -44,6 +50,7 @@ public class MoreEnemies : MonoBehaviour {
 			}
 		if (comeout) {
 			foreach (GameObject enemy in nextenemies) {
+				enemy.GetComponent<EnemyScript>().activate = true;
 				enemy.GetComponent<Animator> ().SetTrigger (Trigger);
 			}
 			foreach (GameObject obj in objects) {

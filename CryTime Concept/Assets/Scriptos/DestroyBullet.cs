@@ -13,10 +13,10 @@ public class DestroyBullet : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter(Collision col)
+	void OnTriggerEnter(Collider col)
 	{
-		if (col.collider.tag == "Bullet") {
-			Destroy (col.gameObject);
+		if (col.GetComponent<Collider>().tag == "Bullet") {
+			Debug.Log (col);
 		}
 	}
 
