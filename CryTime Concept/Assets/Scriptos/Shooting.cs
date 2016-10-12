@@ -6,11 +6,10 @@ using System;
 public class Shooting : MonoBehaviour {
 
 	public float hitdist = 20.0f;
-	public GameObject gun;
 	GameObject enemy;
 	public RawImage[] clip;
 	bool outofammo;
-	public Text Reload;
+	public RawImage Reload;
 	public Texture2D cursor;
 	CursorMode cursormode = CursorMode.Auto;
 	Vector2 hotspot = Vector2.zero;

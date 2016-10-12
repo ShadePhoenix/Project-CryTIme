@@ -30,6 +30,7 @@ public class Positions : MonoBehaviour {
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
 			StandBy.GetComponent<TextFlash> ().stop = true;
 			StopCoroutine (StandBy.GetComponent<TextFlash> ().textflash (StandBy));
+			start = true;
 			StandBy.gameObject.SetActive (false);
 			Engage.gameObject.SetActive (true);
 		} else {

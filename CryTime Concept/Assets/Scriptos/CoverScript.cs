@@ -7,12 +7,13 @@ public class CoverScript : MonoBehaviour {
 	public string BoxCover;
 	public GameObject[] box;
 	public bool crouch = false;
+	public GameObject gun;
 
 	bool CanCover;
+	bool reloaded = false;
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -23,6 +24,16 @@ public class CoverScript : MonoBehaviour {
 			crouch = false;
 				GetComponent<Animator> ().SetTrigger (Default);
 			}
+
+		if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Cover")) {
+			if (!reloaded) {
+				reloaded = true;
+				gun.GetComponent<Animator> ().SetTrigger ("Trig");
+			}
 		}
+		else if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("OutOfCover")) {
+				reloaded = false;
+		}
+	}
 		
 }
