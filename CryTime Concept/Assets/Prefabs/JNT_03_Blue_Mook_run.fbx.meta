@@ -1,0 +1,397 @@
+fileFormatVersion: 2
+guid: cd4fd4af1d0377c44971f31b3f3da195
+timeCreated: 1476668658
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: GunBody1
+    100002: //RootNode
+    100004: Mooks_Blue_01:Blue_Mook
+    100006: Mooks_Blue_01:Boots3
+    100008: Mooks_Blue_01:Bullet_Proof_Vest1
+    100010: Mooks_Blue_01:Character
+    100012: Mooks_Blue_01:Clothes
+    100014: Mooks_Blue_01:Handle1
+    100016: Mooks_Blue_01:Head_End_Jnt
+    100018: Mooks_Blue_01:Head_Jnt
+    100020: Mooks_Blue_01:Hip_Jnt
+    100022: Mooks_Blue_01:Holster4
+    100024: Mooks_Blue_01:Holster_Grp
+    100026: Mooks_Blue_01:Hooded_TurtleNeck3
+    100028: Mooks_Blue_01:Knife_Grp
+    100030: Mooks_Blue_01:L_Back_Jnt
+    100032: Mooks_Blue_01:Large_Belt1
+    100034: Mooks_Blue_01:Left_Ankle_Jnt
+    100036: Mooks_Blue_01:Left_Ball_Jnt
+    100038: Mooks_Blue_01:Left_Clavicle_Jnt
+    100040: Mooks_Blue_01:Left_Elbow_Jnt
+    100042: Mooks_Blue_01:Left_Fingers1_Jnt
+    100044: Mooks_Blue_01:Left_Fingers2_Jnt
+    100046: Mooks_Blue_01:Left_Knee_Jnt
+    100048: Mooks_Blue_01:Left_Pointer1_Jnt
+    100050: Mooks_Blue_01:Left_Pointer2_Jnt
+    100052: Mooks_Blue_01:Left_Pointer3_Jnt
+    100054: Mooks_Blue_01:Left_Pointer4_Jnt
+    100056: Mooks_Blue_01:Left_Shoulder_Jnt
+    100058: Mooks_Blue_01:Left_Thigh_Jnt
+    100060: Mooks_Blue_01:Left_Thumb1_Jnt
+    100062: Mooks_Blue_01:Left_Thumb2_Jnt
+    100064: Mooks_Blue_01:Left_Thumb3_Jnt
+    100066: Mooks_Blue_01:Left_Thumb4_Jnt
+    100068: Mooks_Blue_01:Left_Toes_Jnt
+    100070: Mooks_Blue_01:Left_Wrist_Jnt
+    100072: Mooks_Blue_01:LeftFingers3_Jnt
+    100074: Mooks_Blue_01:LeftFingers4_Jnt
+    100076: Mooks_Blue_01:Neck_Jnt
+    100078: Mooks_Blue_01:Pants3
+    100080: Mooks_Blue_01:Right_Ankle_Jnt
+    100082: Mooks_Blue_01:Right_Ball_Jnt
+    100084: Mooks_Blue_01:Right_Clavicle_Jnt
+    100086: Mooks_Blue_01:Right_Elbow_Jnt
+    100088: Mooks_Blue_01:Right_Fingers1_Jnt
+    100090: Mooks_Blue_01:Right_Fingers2_Jnt
+    100092: Mooks_Blue_01:Right_Fingers3_Jnt
+    100094: Mooks_Blue_01:Right_Fingers4_Jnt
+    100096: Mooks_Blue_01:Right_Knee_Jnt
+    100098: Mooks_Blue_01:Right_Pointer1_Jnt
+    100100: Mooks_Blue_01:Right_Pointer2_Jnt
+    100102: Mooks_Blue_01:Right_Pointer3_Jnt
+    100104: Mooks_Blue_01:Right_Pointer4_Jnt
+    100106: Mooks_Blue_01:Right_Shoulder_Jnt
+    100108: Mooks_Blue_01:Right_Thigh_Jnt
+    100110: Mooks_Blue_01:Right_Thumb1_Jnt
+    100112: Mooks_Blue_01:Right_Thumb2_Jnt
+    100114: Mooks_Blue_01:Right_Thumb3_Jnt
+    100116: Mooks_Blue_01:Right_Thumb4_Jnt
+    100118: Mooks_Blue_01:Right_Toes_Jnt
+    100120: Mooks_Blue_01:Right_Wrist_Jnt
+    100122: Mooks_Blue_01:Root_Jnt
+    100124: Mooks_Blue_01:Sheathe1
+    100126: Mooks_Blue_01:Smoothed
+    100128: Mooks_Blue_01:Smoothed 1
+    100130: Mooks_Blue_01:U_Back_Jnt
+    400000: GunBody1
+    400002: //RootNode
+    400004: Mooks_Blue_01:Blue_Mook
+    400006: Mooks_Blue_01:Boots3
+    400008: Mooks_Blue_01:Bullet_Proof_Vest1
+    400010: Mooks_Blue_01:Character
+    400012: Mooks_Blue_01:Clothes
+    400014: Mooks_Blue_01:Handle1
+    400016: Mooks_Blue_01:Head_End_Jnt
+    400018: Mooks_Blue_01:Head_Jnt
+    400020: Mooks_Blue_01:Hip_Jnt
+    400022: Mooks_Blue_01:Holster4
+    400024: Mooks_Blue_01:Holster_Grp
+    400026: Mooks_Blue_01:Hooded_TurtleNeck3
+    400028: Mooks_Blue_01:Knife_Grp
+    400030: Mooks_Blue_01:L_Back_Jnt
+    400032: Mooks_Blue_01:Large_Belt1
+    400034: Mooks_Blue_01:Left_Ankle_Jnt
+    400036: Mooks_Blue_01:Left_Ball_Jnt
+    400038: Mooks_Blue_01:Left_Clavicle_Jnt
+    400040: Mooks_Blue_01:Left_Elbow_Jnt
+    400042: Mooks_Blue_01:Left_Fingers1_Jnt
+    400044: Mooks_Blue_01:Left_Fingers2_Jnt
+    400046: Mooks_Blue_01:Left_Knee_Jnt
+    400048: Mooks_Blue_01:Left_Pointer1_Jnt
+    400050: Mooks_Blue_01:Left_Pointer2_Jnt
+    400052: Mooks_Blue_01:Left_Pointer3_Jnt
+    400054: Mooks_Blue_01:Left_Pointer4_Jnt
+    400056: Mooks_Blue_01:Left_Shoulder_Jnt
+    400058: Mooks_Blue_01:Left_Thigh_Jnt
+    400060: Mooks_Blue_01:Left_Thumb1_Jnt
+    400062: Mooks_Blue_01:Left_Thumb2_Jnt
+    400064: Mooks_Blue_01:Left_Thumb3_Jnt
+    400066: Mooks_Blue_01:Left_Thumb4_Jnt
+    400068: Mooks_Blue_01:Left_Toes_Jnt
+    400070: Mooks_Blue_01:Left_Wrist_Jnt
+    400072: Mooks_Blue_01:LeftFingers3_Jnt
+    400074: Mooks_Blue_01:LeftFingers4_Jnt
+    400076: Mooks_Blue_01:Neck_Jnt
+    400078: Mooks_Blue_01:Pants3
+    400080: Mooks_Blue_01:Right_Ankle_Jnt
+    400082: Mooks_Blue_01:Right_Ball_Jnt
+    400084: Mooks_Blue_01:Right_Clavicle_Jnt
+    400086: Mooks_Blue_01:Right_Elbow_Jnt
+    400088: Mooks_Blue_01:Right_Fingers1_Jnt
+    400090: Mooks_Blue_01:Right_Fingers2_Jnt
+    400092: Mooks_Blue_01:Right_Fingers3_Jnt
+    400094: Mooks_Blue_01:Right_Fingers4_Jnt
+    400096: Mooks_Blue_01:Right_Knee_Jnt
+    400098: Mooks_Blue_01:Right_Pointer1_Jnt
+    400100: Mooks_Blue_01:Right_Pointer2_Jnt
+    400102: Mooks_Blue_01:Right_Pointer3_Jnt
+    400104: Mooks_Blue_01:Right_Pointer4_Jnt
+    400106: Mooks_Blue_01:Right_Shoulder_Jnt
+    400108: Mooks_Blue_01:Right_Thigh_Jnt
+    400110: Mooks_Blue_01:Right_Thumb1_Jnt
+    400112: Mooks_Blue_01:Right_Thumb2_Jnt
+    400114: Mooks_Blue_01:Right_Thumb3_Jnt
+    400116: Mooks_Blue_01:Right_Thumb4_Jnt
+    400118: Mooks_Blue_01:Right_Toes_Jnt
+    400120: Mooks_Blue_01:Right_Wrist_Jnt
+    400122: Mooks_Blue_01:Root_Jnt
+    400124: Mooks_Blue_01:Sheathe1
+    400126: Mooks_Blue_01:Smoothed
+    400128: Mooks_Blue_01:Smoothed 1
+    400130: Mooks_Blue_01:U_Back_Jnt
+    2300000: GunBody1
+    3300000: GunBody1
+    4300000: Mooks_Blue_01:Smoothed
+    4300002: Mooks_Blue_01:Boots3
+    4300004: Mooks_Blue_01:Bullet_Proof_Vest1
+    4300006: Mooks_Blue_01:Hooded_TurtleNeck3
+    4300008: Mooks_Blue_01:Pants3
+    4300010: Mooks_Blue_01:Large_Belt1
+    4300012: Mooks_Blue_01:Sheathe1
+    4300014: Mooks_Blue_01:Handle1
+    4300016: Mooks_Blue_01:Holster4
+    4300018: GunBody1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Mooks_Blue_01:Boots3
+    13700002: Mooks_Blue_01:Bullet_Proof_Vest1
+    13700004: Mooks_Blue_01:Handle1
+    13700006: Mooks_Blue_01:Holster4
+    13700008: Mooks_Blue_01:Hooded_TurtleNeck3
+    13700010: Mooks_Blue_01:Large_Belt1
+    13700012: Mooks_Blue_01:Pants3
+    13700014: Mooks_Blue_01:Sheathe1
+    13700016: Mooks_Blue_01:Smoothed
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 51
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: GunBody1
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Boots3
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Bullet_Proof_Vest1
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Holster_Grp
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Holster_Grp/Mooks_Blue_01:Holster4
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Hooded_TurtleNeck3
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Knife_Grp
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Knife_Grp/Mooks_Blue_01:Handle1
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Knife_Grp/Mooks_Blue_01:Sheathe1
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Large_Belt1
+        weight: 1
+      - path: Mooks_Blue_01:Blue_Mook/Mooks_Blue_01:Clothes/Mooks_Blue_01:Smoothed
+          1/Mooks_Blue_01:Pants3
+        weight: 1
+      - path: Mooks_Blue_01:Character
+        weight: 1
+      - path: Mooks_Blue_01:Character/Mooks_Blue_01:Smoothed
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Fingers1_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Fingers1_Jnt/Mooks_Blue_01:Left_Fingers2_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Fingers1_Jnt/Mooks_Blue_01:Left_Fingers2_Jnt/Mooks_Blue_01:LeftFingers3_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Fingers1_Jnt/Mooks_Blue_01:Left_Fingers2_Jnt/Mooks_Blue_01:LeftFingers3_Jnt/Mooks_Blue_01:LeftFingers4_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Pointer1_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Pointer1_Jnt/Mooks_Blue_01:Left_Pointer2_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Pointer1_Jnt/Mooks_Blue_01:Left_Pointer2_Jnt/Mooks_Blue_01:Left_Pointer3_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Pointer1_Jnt/Mooks_Blue_01:Left_Pointer2_Jnt/Mooks_Blue_01:Left_Pointer3_Jnt/Mooks_Blue_01:Left_Pointer4_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Thumb1_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Thumb1_Jnt/Mooks_Blue_01:Left_Thumb2_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Thumb1_Jnt/Mooks_Blue_01:Left_Thumb2_Jnt/Mooks_Blue_01:Left_Thumb3_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Left_Clavicle_Jnt/Mooks_Blue_01:Left_Shoulder_Jnt/Mooks_Blue_01:Left_Elbow_Jnt/Mooks_Blue_01:Left_Wrist_Jnt/Mooks_Blue_01:Left_Thumb1_Jnt/Mooks_Blue_01:Left_Thumb2_Jnt/Mooks_Blue_01:Left_Thumb3_Jnt/Mooks_Blue_01:Left_Thumb4_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Neck_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Neck_Jnt/Mooks_Blue_01:Head_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Neck_Jnt/Mooks_Blue_01:Head_Jnt/Mooks_Blue_01:Head_End_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Fingers1_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Fingers1_Jnt/Mooks_Blue_01:Right_Fingers2_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Fingers1_Jnt/Mooks_Blue_01:Right_Fingers2_Jnt/Mooks_Blue_01:Right_Fingers3_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Fingers1_Jnt/Mooks_Blue_01:Right_Fingers2_Jnt/Mooks_Blue_01:Right_Fingers3_Jnt/Mooks_Blue_01:Right_Fingers4_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Pointer1_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Pointer1_Jnt/Mooks_Blue_01:Right_Pointer2_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Pointer1_Jnt/Mooks_Blue_01:Right_Pointer2_Jnt/Mooks_Blue_01:Right_Pointer3_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Pointer1_Jnt/Mooks_Blue_01:Right_Pointer2_Jnt/Mooks_Blue_01:Right_Pointer3_Jnt/Mooks_Blue_01:Right_Pointer4_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Thumb1_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Thumb1_Jnt/Mooks_Blue_01:Right_Thumb2_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Thumb1_Jnt/Mooks_Blue_01:Right_Thumb2_Jnt/Mooks_Blue_01:Right_Thumb3_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:L_Back_Jnt/Mooks_Blue_01:U_Back_Jnt/Mooks_Blue_01:Right_Clavicle_Jnt/Mooks_Blue_01:Right_Shoulder_Jnt/Mooks_Blue_01:Right_Elbow_Jnt/Mooks_Blue_01:Right_Wrist_Jnt/Mooks_Blue_01:Right_Thumb1_Jnt/Mooks_Blue_01:Right_Thumb2_Jnt/Mooks_Blue_01:Right_Thumb3_Jnt/Mooks_Blue_01:Right_Thumb4_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Left_Thigh_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Left_Thigh_Jnt/Mooks_Blue_01:Left_Knee_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Left_Thigh_Jnt/Mooks_Blue_01:Left_Knee_Jnt/Mooks_Blue_01:Left_Ankle_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Left_Thigh_Jnt/Mooks_Blue_01:Left_Knee_Jnt/Mooks_Blue_01:Left_Ankle_Jnt/Mooks_Blue_01:Left_Ball_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Left_Thigh_Jnt/Mooks_Blue_01:Left_Knee_Jnt/Mooks_Blue_01:Left_Ankle_Jnt/Mooks_Blue_01:Left_Ball_Jnt/Mooks_Blue_01:Left_Toes_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Right_Thigh_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Right_Thigh_Jnt/Mooks_Blue_01:Right_Knee_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Right_Thigh_Jnt/Mooks_Blue_01:Right_Knee_Jnt/Mooks_Blue_01:Right_Ankle_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Right_Thigh_Jnt/Mooks_Blue_01:Right_Knee_Jnt/Mooks_Blue_01:Right_Ankle_Jnt/Mooks_Blue_01:Right_Ball_Jnt
+        weight: 1
+      - path: Mooks_Blue_01:Root_Jnt/Mooks_Blue_01:Hip_Jnt/Mooks_Blue_01:Right_Thigh_Jnt/Mooks_Blue_01:Right_Knee_Jnt/Mooks_Blue_01:Right_Ankle_Jnt/Mooks_Blue_01:Right_Ball_Jnt/Mooks_Blue_01:Right_Toes_Jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

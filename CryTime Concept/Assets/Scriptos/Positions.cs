@@ -16,17 +16,21 @@ public class Positions : MonoBehaviour {
 	public string trig;
 	bool enemyalive;
 	public string Trigger;
+	public GameObject firstenemy;
+	public GameObject secondenemy;
 
 	bool start = true;
 
 
 	// Use this for initialization
 	void Start () {
-		
+
 		}
 	
 	// Update is called once per frame
 	void Update () {
+		firstenemy.GetComponent<EnemyScript> ().activate = true;
+		secondenemy.GetComponent<EnemyScript> ().activate = true;
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
 			StandBy.GetComponent<TextFlash> ().stop = true;
 			StopCoroutine (StandBy.GetComponent<TextFlash> ().textflash (StandBy));

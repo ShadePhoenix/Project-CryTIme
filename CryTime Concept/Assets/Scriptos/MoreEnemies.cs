@@ -5,6 +5,7 @@ public class MoreEnemies : MonoBehaviour {
 
 	public GameObject[] enemies;
 	public GameObject[] nextenemies;
+	public GameObject[] nextenemymesh;
 	public GameObject[] objects;
 	bool enemiesalive;
 	bool comeout = false;
@@ -39,6 +40,10 @@ public class MoreEnemies : MonoBehaviour {
 			} else {
 				if (!enemiesalive || enemies.Length <= 0) {
 				//moves players to specific points
+				foreach (GameObject enemy in nextenemymesh) {
+					enemy.SetActive (true);
+					Debug.Log("hi");
+				}
 				foreach (GameObject enemy in nextenemies) {
 					enemy.GetComponent<EnemyScript>().activate = true;
 					enemy.GetComponent<Animator> ().SetTrigger (Trigger);

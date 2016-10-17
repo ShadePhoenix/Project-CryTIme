@@ -9,6 +9,8 @@ public class EnemyScript : MonoBehaviour {
 	public string Trigger;
 	bool crouching;
 	public bool activate;
+	public GameObject Enemy;
+	public GameObject gun;
 
 	public float bulletLifeTime = 2f;
 
@@ -20,11 +22,14 @@ public class EnemyScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+			if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Finished")) {
+				Enemy.GetComponent<Animator> ().SetTrigger ("Default");
+		}
 	}
 
 	void Shoot()
 	{
+		
 		float randx = 0, randy = 0, randz = 0;
 		//if the enemy is a "blue" enemy
 		if (transform.name == "EnemyBlue") {
@@ -40,18 +45,16 @@ public class EnemyScript : MonoBehaviour {
 			randz = Random.Range (0, 2);
 		}
 		//Creates a new bullet
-		newbullet = Instantiate (bullet, transform.position, transform.rotation) as Rigidbody;
-		//shoots the bullet towards the player
-		newbullet.velocity = ((player.transform.position + new Vector3(randx, randy, randz)) - newbullet.transform.position).normalized * 50;
-
-		//Destroy bullet gameobject after specified time
-		Destroy (newbullet.gameObject, bulletLifeTime);
+			Enemy.GetComponent<Animator> ().SetTrigger ("Shooting");
+			StartCoroutine (Delay (randx, randy, randz));
 	}
 
 	IEnumerator Timer()
 	{
 		while (true) {
-			yield return new WaitForSeconds (2f);
+			int rando = Random.Range (1, 4);
+			Debug.Log (rando);
+			yield return new WaitForSeconds (rando);
 			//Every 2 seconds, it will call the "shoot" functions
 			//Only red enemy will do the following
 			//also makes sure the enemy isnt already crouching
@@ -72,8 +75,20 @@ public class EnemyScript : MonoBehaviour {
 			else {
 					Shoot ();
 				}
+			
 			}
-		}
+	}
+	}
+
+	IEnumerator Delay(float rand1, float rand2, float rand3)
+	{
+		yield return new WaitForSeconds (.5f);
+		newbullet = Instantiate (bullet, gun.transform.position, gun.transform.rotation) as Rigidbody;
+		//shoots the bullet towards the player
+		newbullet.velocity = ((player.transform.position + new Vector3(rand1, rand2, rand3)) - newbullet.transform.position).normalized * 50;
+
+		//Destroy bullet gameobject after specified time
+		Destroy (newbullet.gameObject, bulletLifeTime);
 	}
 
 
