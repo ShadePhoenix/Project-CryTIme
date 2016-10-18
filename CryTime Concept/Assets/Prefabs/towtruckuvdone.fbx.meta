@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 4945bbc6110c5b84ea01cae97dd3530c
+timeCreated: 1476751981
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: backleftwheel
+    100002: backleftwheel1
+    100004: base
+    100006: cage
+    100008: frontleftwheel
+    100010: frontleftwheel1
+    100012: hud
+    100014: pedal
+    100016: pedal1
+    100018: seatleft
+    100020: seatright
+    100022: steeringwheel
+    100024: towbar
+    100026: towbarholder
+    100028: //RootNode
+    400000: backleftwheel
+    400002: backleftwheel1
+    400004: base
+    400006: cage
+    400008: frontleftwheel
+    400010: frontleftwheel1
+    400012: hud
+    400014: pedal
+    400016: pedal1
+    400018: seatleft
+    400020: seatright
+    400022: steeringwheel
+    400024: towbar
+    400026: towbarholder
+    400028: //RootNode
+    2300000: backleftwheel
+    2300002: backleftwheel1
+    2300004: base
+    2300006: cage
+    2300008: frontleftwheel
+    2300010: frontleftwheel1
+    2300012: hud
+    2300014: pedal
+    2300016: pedal1
+    2300018: seatleft
+    2300020: seatright
+    2300022: steeringwheel
+    2300024: towbar
+    2300026: towbarholder
+    3300000: backleftwheel
+    3300002: backleftwheel1
+    3300004: base
+    3300006: cage
+    3300008: frontleftwheel
+    3300010: frontleftwheel1
+    3300012: hud
+    3300014: pedal
+    3300016: pedal1
+    3300018: seatleft
+    3300020: seatright
+    3300022: steeringwheel
+    3300024: towbar
+    3300026: towbarholder
+    4300000: base
+    4300002: towbarholder
+    4300004: towbar
+    4300006: hud
+    4300008: pedal1
+    4300010: pedal
+    4300012: seatleft
+    4300014: seatright
+    4300016: steeringwheel
+    4300018: cage
+    4300020: backleftwheel
+    4300022: frontleftwheel
+    4300024: backleftwheel1
+    4300026: frontleftwheel1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

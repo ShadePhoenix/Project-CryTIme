@@ -99,13 +99,13 @@ public class Shooting : MonoBehaviour {
 
 							}
 						}
-					}
+					
 						if (Physics.Raycast (ray, out hit2, 500)) {
 							//if the object that the mouse is on is an enemy
 							if (hit2.collider.tag == "Enemy") {
 								//it will destroy the enemy
 								hit2.collider.gameObject.SetActive (false);
-
+							}
 
 							}
 						}

@@ -11,6 +11,7 @@ public class EnemyScript : MonoBehaviour {
 	public bool activate;
 	public GameObject Enemy;
 	public GameObject gun;
+	public GameObject gun2;
 
 	public float bulletLifeTime = 2f;
 
@@ -45,15 +46,19 @@ public class EnemyScript : MonoBehaviour {
 			randz = Random.Range (0, 2);
 		}
 		//Creates a new bullet
+		if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Finished")) {
 			Enemy.GetComponent<Animator> ().SetTrigger ("Shooting");
-			StartCoroutine (Delay (randx, randy, randz));
+			StartCoroutine (Delay (randx, randy, randz, gun));
+			if (transform.name == "EnemyRed") {
+				StartCoroutine (Delay (randx, randy, randz, gun2));
+			}
+		}
 	}
 
 	IEnumerator Timer()
 	{
 		while (true) {
 			int rando = Random.Range (1, 4);
-			Debug.Log (rando);
 			yield return new WaitForSeconds (rando);
 			//Every 2 seconds, it will call the "shoot" functions
 			//Only red enemy will do the following
@@ -68,7 +73,7 @@ public class EnemyScript : MonoBehaviour {
 						Shoot ();
 					}
 					if (rand == 1) {
-						StartCoroutine ("Crouch");
+						StartCoroutine (Crouch());
 					}
 				} 
 			//Blue enemies will only shoot
@@ -80,10 +85,10 @@ public class EnemyScript : MonoBehaviour {
 	}
 	}
 
-	IEnumerator Delay(float rand1, float rand2, float rand3)
+	IEnumerator Delay(float rand1, float rand2, float rand3, GameObject Gun)
 	{
 		yield return new WaitForSeconds (.5f);
-		newbullet = Instantiate (bullet, gun.transform.position, gun.transform.rotation) as Rigidbody;
+		newbullet = Instantiate (bullet, Gun.transform.position, Gun.transform.rotation) as Rigidbody;
 		//shoots the bullet towards the player
 		newbullet.velocity = ((player.transform.position + new Vector3(rand1, rand2, rand3)) - newbullet.transform.position).normalized * 50;
 

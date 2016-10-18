@@ -42,7 +42,6 @@ public class MoreEnemies : MonoBehaviour {
 				//moves players to specific points
 				foreach (GameObject enemy in nextenemymesh) {
 					enemy.SetActive (true);
-					Debug.Log("hi");
 				}
 				foreach (GameObject enemy in nextenemies) {
 					enemy.GetComponent<EnemyScript>().activate = true;
