@@ -18,7 +18,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: {x: -17.08, y: -0.68, z: -96.23}
+        value: {x: -17.113, y: -0.68, z: -96.213}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -68,7 +68,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -17.08
+        value: -17.113
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -98,7 +98,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -96.23
+        value: -96.213
         inSlope: 0
         outSlope: 0
         tangentMode: 10

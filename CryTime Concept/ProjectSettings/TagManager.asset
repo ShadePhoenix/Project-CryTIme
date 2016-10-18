@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Bullet
   - Cover
+  - FirstEnemies
   layers:
   - Default
   - TransparentFX

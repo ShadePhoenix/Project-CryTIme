@@ -101,6 +101,7 @@ public class Shooting : MonoBehaviour {
 						}
 					
 						if (Physics.Raycast (ray, out hit2, 500)) {
+							Debug.Log(hit2.collider.name);
 							//if the object that the mouse is on is an enemy
 							if (hit2.collider.tag == "Enemy") {
 								//it will destroy the enemy
