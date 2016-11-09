@@ -6,7 +6,7 @@ using System;
 public class Positions : MonoBehaviour {
 
 	public GameObject player;
-	public RawImage StandBy;
+	public GameObject StandBy;
 	public RawImage Engage;
 	bool end = false;
 	public GameObject[] previousenemies;
@@ -32,21 +32,10 @@ public class Positions : MonoBehaviour {
 		firstenemy.GetComponent<EnemyScript> ().activate = true;
 		secondenemy.GetComponent<EnemyScript> ().activate = true;
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
-			StandBy.GetComponent<TextFlash> ().stop = true;
-			StopCoroutine (StandBy.GetComponent<TextFlash> ().textflash (StandBy));
-			start = true;
-			StandBy.gameObject.SetActive (false);
 			Engage.gameObject.SetActive (true);
 		} else {
 			Engage.gameObject.SetActive (false);
 		}
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Moving")) {
-			if (start) {
-				start = false;
-				StandBy.GetComponent<TextFlash> ().stop = false;
-				StartCoroutine (StandBy.GetComponent<TextFlash> ().textflash (StandBy));
-			}
-		} 
 		//checks the distance between the player and the position node
 		float dist = Vector3.Distance (transform.position, player.transform.position);
 		//makes sure that all enemies are dead before proceeding
@@ -61,6 +50,7 @@ public class Positions : MonoBehaviour {
 		if (previousenemies.Length == 0 || !enemyalive) {
 			//the reason for this bool is so that if it has reached the node
 			//when proceeding to the next node, it doesn't try and back track
+			player.GetComponent<Animator>().SetTrigger(trig);
 			if (!end) {
 				//moves the player to the position node
 				if (transform.name != "Pos") {
@@ -74,7 +64,6 @@ public class Positions : MonoBehaviour {
 					obj.GetComponent<Animator> ().SetTrigger (Trigger);
 				}
 				foreach (GameObject enemy in nextenemies) {
-					player.GetComponent<Animator>().SetTrigger(trig);
 					enemy.GetComponent<EnemyScript> ().activate = true;
 				}
 				end = true;

@@ -1,0 +1,32 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class PCorVR : MonoBehaviour {
+
+	public bool vrON;
+	public Canvas UI;
+	public Camera PCcam;
+	public GameObject[] objects;
+
+
+	// Use this for initialization
+	void Start () {
+
+		if (vrON) {
+			foreach (GameObject obj in objects) {
+				if (obj.layer == 10) {
+					Debug.Log ("hih");
+					obj.gameObject.SetActive (true);
+				}
+			}
+			UI.renderMode = RenderMode.ScreenSpaceCamera;
+			PCcam.gameObject.SetActive (false);
+		} 
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}

@@ -10,7 +10,6 @@ public class Shooting : MonoBehaviour {
 	public RawImage[] clip;
 	bool outofammo;
 	public RawImage Reload;
-	public Texture2D cursor;
 	CursorMode cursormode = CursorMode.Auto;
 	Vector2 hotspot = Vector2.zero;
 	bool reloadin;
@@ -18,13 +17,17 @@ public class Shooting : MonoBehaviour {
 	public Ray VRRay;
 	public bool fire = false;
 	public GameObject player;
+	public Texture2D cursor;
 	public GameObject controller;
 	public RawImage crosshair;
 	public RectTransform canvas;
 	public Camera cam;
+	public GameObject particle;
+	public GameObject HeliPos;
+	public Accuracy accuracy;
+	public GameObject Krieg;
 	Ray RayInGame;
-
-
+	bool removeReload;
 
 	// Use this for initialization
 	void Start (){
@@ -33,6 +36,24 @@ public class Shooting : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
+			Reload.gameObject.SetActive (false);		
+		}
+
+		foreach (RawImage bullet in clip) {
+			if (bullet.gameObject.activeSelf) {
+				removeReload = false;
+				break;
+			}
+			removeReload = true;
+		}
+
+		if (removeReload) {
+			removeReload = false;
+			Reload.gameObject.SetActive (true);
+		}
+
 		RaycastHit hit;
 		//makes this camera the main camera
 		//creates a ray from the vive controllers position
@@ -47,18 +68,10 @@ public class Shooting : MonoBehaviour {
 			//this sets the crosshair to be where you are pointing the controllers
 			crosshair.transform.localPosition = new Vector2(uv.x * canvas.rect.width - canvas.rect.width / 2, uv.y * canvas.rect.height- canvas.rect.height / 2);
 		}
-
-		if (!transform.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("OutOfCover")) {
-			Reload.gameObject.SetActive (false);
-			foreach (RawImage bullet in clip) {
-				if (bullet.gameObject.activeSelf == false) {
-					bullet.gameObject.SetActive (true);
-				}
-			}
-		}
 		//gets left mouse down
 		if (Input.GetKeyDown (KeyCode.Mouse0) || fire) {
 			fire = false;
+
 			if (!reloadin) {
 				if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("OutOfCover")) {
 			
@@ -90,22 +103,45 @@ public class Shooting : MonoBehaviour {
 					RaycastHit hit2;
 					//checks if the mouse is clicking something, eg an enemy behind the mouse
 					if (!outofammo) {
+						accuracy.ShotsFired += 1;
+						//Impact.gameObject.SetActive (false);
+						transform.GetComponent<PlaySounds> ().PlayShootSound ();
 						if (Physics.Raycast (RayInGame, out hit, 500000)) {
 							//if the object that the mouse is on is an enemy
 							Debug.Log(hit.collider.name);
 							if (hit.collider.tag == "Enemy") {
+								accuracy.ShotsHit += 1;
 								//it will destroy the enemy
-								hit.collider.gameObject.SetActive (false);
+								StartCoroutine(die(hit.collider.gameObject));
 
+							}
+							if (hit.collider.tag == "Heli") {
+								StartCoroutine(dieHeli(hit.collider.gameObject));
+								accuracy.ShotsHit += 1;
+							}
+							if (hit.collider.tag == "Krieg") {
+								StartCoroutine(dieKrieg(hit.collider.gameObject));
+								accuracy.ShotsHit += 1;
 							}
 						}
 					
 						if (Physics.Raycast (ray, out hit2, 500)) {
-							Debug.Log(hit2.collider.name);
 							//if the object that the mouse is on is an enemy
 							if (hit2.collider.tag == "Enemy") {
+								Instantiate (particle, hit2.transform.position, Quaternion.Euler (270, 0, 0));
+								accuracy.ShotsHit += 1;
 								//it will destroy the enemy
-								hit2.collider.gameObject.SetActive (false);
+								StartCoroutine(die(hit2.collider.gameObject));
+							}
+							if (hit2.collider.tag == "Heli") {
+								Instantiate (particle, hit2.transform.position, Quaternion.Euler (270, 0, 0));
+								accuracy.ShotsHit += 1;
+								StartCoroutine(dieHeli(hit2.collider.gameObject));
+							}
+							if (hit2.collider.tag == "Krieg") {
+								StartCoroutine(dieKrieg(hit2.collider.gameObject));
+								Instantiate (particle, hit2.transform.position, Quaternion.Euler (270, 0, 0));
+								accuracy.ShotsHit += 1;
 							}
 
 							}
@@ -118,6 +154,25 @@ public class Shooting : MonoBehaviour {
 
 			}
 		}
+
+	IEnumerator die (GameObject enemy)
+	{
+		enemy.GetComponent<EnemyScript> ().Enemy.GetComponent<Animator>().SetTrigger("Death");
+		yield return new WaitForSeconds (.5f);
+		enemy.gameObject.SetActive (false);
+	}
+
+	IEnumerator dieHeli(GameObject heli)
+	{
+		heli.GetComponent<Helicopter> ().Health -= 1;
+		yield return new WaitForSeconds (.5f);
+	}
+	IEnumerator dieKrieg(GameObject krieg)
+	{
+		krieg.GetComponent<KriegMoving> ().health -= 1;
+		yield return new WaitForSeconds (.5f);
+	}
+
 }
 				
 

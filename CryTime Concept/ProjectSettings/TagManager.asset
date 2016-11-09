@@ -9,6 +9,10 @@ TagManager:
   - Bullet
   - Cover
   - FirstEnemies
+  - Jet
+  - Coin
+  - Heli
+  - Krieg
   layers:
   - Default
   - TransparentFX
@@ -20,7 +24,7 @@ TagManager:
   - 
   - VRScreen
   - GunLayer
-  - 
+  - VRLayer
   - 
   - 
   - 
@@ -43,6 +47,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 3505224367
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

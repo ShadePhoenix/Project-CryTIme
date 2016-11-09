@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 0804bf61be2d55e4e8e958be51ec355a
+timeCreated: 1477353080
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Beanie1
+    100002: Belt2
+    100004: Boots2
+    100006: Chain1
+    100008: Character
+    100010: Clothes
+    100012: Head_End_Jnt
+    100014: Head_Jnt
+    100016: Hip_Jnt
+    100018: L_Back_Jnt
+    100020: Left_Ankle_Jnt
+    100022: Left_Ball_Jnt
+    100024: Left_Clavicle_Jnt
+    100026: Left_Elbow_Jnt
+    100028: Left_Fingers1_Jnt
+    100030: Left_Fingers2_Jnt
+    100032: Left_Knee_Jnt
+    100034: Left_Pointer1_Jnt
+    100036: Left_Pointer2_Jnt
+    100038: Left_Pointer3_Jnt
+    100040: Left_Pointer4_Jnt
+    100042: Left_Shoulder_Jnt
+    100044: Left_Thigh_Jnt
+    100046: Left_Thumb1_Jnt
+    100048: Left_Thumb2_Jnt
+    100050: Left_Thumb3_Jnt
+    100052: Left_Thumb4_Jnt
+    100054: Left_Toes_Jnt
+    100056: Left_Wrist_Jnt
+    100058: LeftFingers3_Jnt
+    100060: LeftFingers4_Jnt
+    100062: Neck_Jnt
+    100064: Pants2
+    100066: Purple_Mook
+    100068: //RootNode
+    100070: Right_Ankle_Jnt
+    100072: Right_Ball_Jnt
+    100074: Right_Clavicle_Jnt
+    100076: Right_Elbow_Jnt
+    100078: Right_Fingers1_Jnt
+    100080: Right_Fingers2_Jnt
+    100082: Right_Fingers3_Jnt
+    100084: Right_Fingers4_Jnt
+    100086: Right_Knee_Jnt
+    100088: Right_Pointer1_Jnt
+    100090: Right_Pointer2_Jnt
+    100092: Right_Pointer3_Jnt
+    100094: Right_Pointer4_Jnt
+    100096: Right_Shoulder_Jnt
+    100098: Right_Thigh_Jnt
+    100100: Right_Thumb1_Jnt
+    100102: Right_Thumb2_Jnt
+    100104: Right_Thumb3_Jnt
+    100106: Right_Thumb4_Jnt
+    100108: Right_Toes_Jnt
+    100110: Right_Wrist_Jnt
+    100112: Root_Jnt
+    100114: Smoothed
+    100116: Smoothed 1
+    100118: TurtleNeck3
+    100120: U_Back_Jnt
+    100122: XM8
+    400000: Beanie1
+    400002: Belt2
+    400004: Boots2
+    400006: Chain1
+    400008: Character
+    400010: Clothes
+    400012: Head_End_Jnt
+    400014: Head_Jnt
+    400016: Hip_Jnt
+    400018: L_Back_Jnt
+    400020: Left_Ankle_Jnt
+    400022: Left_Ball_Jnt
+    400024: Left_Clavicle_Jnt
+    400026: Left_Elbow_Jnt
+    400028: Left_Fingers1_Jnt
+    400030: Left_Fingers2_Jnt
+    400032: Left_Knee_Jnt
+    400034: Left_Pointer1_Jnt
+    400036: Left_Pointer2_Jnt
+    400038: Left_Pointer3_Jnt
+    400040: Left_Pointer4_Jnt
+    400042: Left_Shoulder_Jnt
+    400044: Left_Thigh_Jnt
+    400046: Left_Thumb1_Jnt
+    400048: Left_Thumb2_Jnt
+    400050: Left_Thumb3_Jnt
+    400052: Left_Thumb4_Jnt
+    400054: Left_Toes_Jnt
+    400056: Left_Wrist_Jnt
+    400058: LeftFingers3_Jnt
+    400060: LeftFingers4_Jnt
+    400062: Neck_Jnt
+    400064: Pants2
+    400066: Purple_Mook
+    400068: //RootNode
+    400070: Right_Ankle_Jnt
+    400072: Right_Ball_Jnt
+    400074: Right_Clavicle_Jnt
+    400076: Right_Elbow_Jnt
+    400078: Right_Fingers1_Jnt
+    400080: Right_Fingers2_Jnt
+    400082: Right_Fingers3_Jnt
+    400084: Right_Fingers4_Jnt
+    400086: Right_Knee_Jnt
+    400088: Right_Pointer1_Jnt
+    400090: Right_Pointer2_Jnt
+    400092: Right_Pointer3_Jnt
+    400094: Right_Pointer4_Jnt
+    400096: Right_Shoulder_Jnt
+    400098: Right_Thigh_Jnt
+    400100: Right_Thumb1_Jnt
+    400102: Right_Thumb2_Jnt
+    400104: Right_Thumb3_Jnt
+    400106: Right_Thumb4_Jnt
+    400108: Right_Toes_Jnt
+    400110: Right_Wrist_Jnt
+    400112: Root_Jnt
+    400114: Smoothed
+    400116: Smoothed 1
+    400118: TurtleNeck3
+    400120: U_Back_Jnt
+    400122: XM8
+    2300000: XM8
+    3300000: XM8
+    4300000: XM8
+    4300002: Smoothed
+    4300004: Beanie1
+    4300006: TurtleNeck3
+    4300008: Chain1
+    4300010: Boots2
+    4300012: Belt2
+    4300014: Pants2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Beanie1
+    13700002: Belt2
+    13700004: Boots2
+    13700006: Chain1
+    13700008: Pants2
+    13700010: Smoothed
+    13700012: TurtleNeck3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

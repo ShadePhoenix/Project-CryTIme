@@ -3,6 +3,7 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
 
+	public int Min; public int Max;
 	public Rigidbody bullet;
 	Rigidbody newbullet;
 	public GameObject player;
@@ -12,7 +13,9 @@ public class EnemyScript : MonoBehaviour {
 	public GameObject Enemy;
 	public GameObject gun;
 	public GameObject gun2;
+	public GameObject MuzzleNormal;
 
+	GameObject particle;
 	public float bulletLifeTime = 2f;
 
 	// Use this for initialization
@@ -25,26 +28,22 @@ public class EnemyScript : MonoBehaviour {
 	void Update () {
 			if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Finished")) {
 				Enemy.GetComponent<Animator> ().SetTrigger ("Default");
-		}
+			}
 	}
 
 	void Shoot()
 	{
+
+		if (transform.name == "EnemyPurple") {
+			if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Ducked")) {
+				Enemy.GetComponent<Animator> ().SetTrigger ("StopShooting");
+			}
+		}
 		
 		float randx = 0, randy = 0, randz = 0;
-		//if the enemy is a "blue" enemy
-		if (transform.name == "EnemyBlue") {
-			//it will randomly give the bullet an offset so the bullets don't shoot straight every time
-			randx = Random.Range (0, 3);
-			randy = Random.Range (0, 3);
-			randz = Random.Range (0, 3);
-		}
-		if (transform.name == "EnemyRed") {
-			//it will randomly give the bullet an offset so the bullets don't shoot straight every time
-			randx = Random.Range (0, 2);
-			randy = Random.Range (0, 2);
-			randz = Random.Range (0, 2);
-		}
+		randx = Random.Range (Min, Max);
+		randy = Random.Range (Min, Max);
+		randz = Random.Range (Min, Max);
 		//Creates a new bullet
 		if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Finished")) {
 			Enemy.GetComponent<Animator> ().SetTrigger ("Shooting");
@@ -70,7 +69,14 @@ public class EnemyScript : MonoBehaviour {
 
 					//checks if the mouse is clicking something, eg an enemy behind the mouse
 					if (rand == 0) {
-						Shoot ();
+						if (transform.name == "EnemyPurple") {
+							//it will randomly give the bullet an offset so the bullets don't shoot straight every time
+							float randx, randy, randz;
+							randx = Random.Range (Min, Max);
+							randy = Random.Range (Min, Max);
+							randz = Random.Range (Min, Max);
+							StartCoroutine(Shoot3());
+						}
 					}
 					if (rand == 1) {
 						StartCoroutine (Crouch());
@@ -85,28 +91,46 @@ public class EnemyScript : MonoBehaviour {
 	}
 	}
 
+	IEnumerator Shoot3 ()
+	{
+		Shoot ();
+		yield return new WaitForSeconds (.1f);
+		Shoot ();
+		yield return new WaitForSeconds (.1f);
+		Shoot ();
+		yield return new WaitForSeconds (.1f);
+		Shoot ();
+		yield return new WaitForSeconds (.1f);
+		Shoot ();
+	}
+
 	IEnumerator Delay(float rand1, float rand2, float rand3, GameObject Gun)
 	{
 		yield return new WaitForSeconds (.5f);
-		newbullet = Instantiate (bullet, Gun.transform.position, Gun.transform.rotation) as Rigidbody;
+		particle = Instantiate (MuzzleNormal, gun.transform.position, gun.transform.rotation) as GameObject;
+		newbullet = Instantiate (bullet, Gun.transform.position, gun.transform.rotation) as Rigidbody;
 		//shoots the bullet towards the player
 		newbullet.velocity = ((player.transform.position + new Vector3(rand1, rand2, rand3)) - newbullet.transform.position).normalized * 50;
+		newbullet.transform.LookAt (player.transform.position);
 
 		//Destroy bullet gameobject after specified time
 		Destroy (newbullet.gameObject, bulletLifeTime);
+		Destroy (particle, .2f);
 	}
 
 
 	IEnumerator Crouch()
 	{
-		//does the crouch down animation
-		transform.GetComponent<Animator> ().SetTrigger (Trigger);
-		crouching = true;
-		//waits a 1.5 seconds
-		yield return new WaitForSeconds (1.5f);
-		//then the enemy will come back up
-		transform.GetComponent<Animator> ().SetTrigger (Trigger);
-		crouching = false;			
+		if (Enemy.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Shooting")) {
+			//does the crouch down animation
+			transform.GetComponent<Animator> ().SetTrigger (Trigger);
+			crouching = true;
+			//waits a 1.5 seconds
+			yield return new WaitForSeconds (1.5f);
+			//then the enemy will come back up
+			transform.GetComponent<Animator> ().SetTrigger (Trigger);
+			crouching = false;		
+		}
 	}
 
 

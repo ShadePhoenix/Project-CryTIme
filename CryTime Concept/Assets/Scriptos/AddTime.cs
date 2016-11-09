@@ -1,76 +1,60 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
+using UnityEngine.UI;
+using System.Collections.Generic;
+
 
 public class AddTime : MonoBehaviour {
-	
-	public GameObject[] Stage1;
-	public int Stage1Time;
-	public GameObject[] Stage2;
-	public int Stage2Time;
-	public GameObject[] Stage3;
-	public int Stage3Time;
+
+	[Serializable]
+	public class Stage
+	{
+		public GameObject[] objects;
+		public int time;
+		public bool com;
+		public bool done;
+	}
+
+	public Stage[] stages;
+
 	public CountDown time;
+	public RawImage Extended;
 
-
-	bool com1;
-	bool done1 = false;
-	bool com2;
-	bool done2 = false;
-	bool com3;
-	bool done3 = false;
 
 	// Use this for initialization
 	void Start () {
 
 	}
-	
+
+	IEnumerator Extend()
+	{
+		Extended.gameObject.SetActive (true);
+		yield return new WaitForSeconds (1);
+		Extended.gameObject.SetActive (false);
+	}
+
 	// Update is called once per frame
 	void Update () {
-		if (!done1) {
-			foreach (GameObject enemy in Stage1) {
-				if (enemy.activeSelf == true) {
-					com1 = false;
-					break;
-				} else {
-					com1 = true;
+		foreach (Stage obj in stages) {
+			if (!obj.done) {
+				foreach (GameObject enemy in obj.objects) {
+					if (enemy.activeSelf) {
+						obj.com = false;
+						break;
+					} else {
+						obj.com = true;
+					}
 				}
 			}
 		}
-		if (!done2) {
-			foreach (GameObject enemy in Stage2) {
-				if (enemy.activeSelf == true) {
-					com2 = false;
-					break;
-				} else {
-					com2 = true;
-				}
+		foreach (Stage obj in stages) {
+			if (obj.com) {
+				obj.done = true;
+				obj.com = false;
+				time.count = time.count + obj.time;
+				StartCoroutine (Extend ());
 			}
-		}
-		if (!done3) {
-			foreach (GameObject enemy in Stage3) {
-				if (enemy.activeSelf == true) {
-					com3 = false;
-					break;
-				} else {
-					com3 = true;
-				}
-			}
-		}
-
-		if (com1) {
-			done1 = true;
-			com1 = false;
-			time.count = time.count + Stage1Time;
-		}
-		if (com2) {
-			done2 = true;
-			com2 = false;
-			time.count = time.count + Stage2Time;
-		}
-		if (com3) {
-			done3 = true;
-			com3 = false;
-			time.count = time.count + Stage3Time;
 		}
 	
 	}

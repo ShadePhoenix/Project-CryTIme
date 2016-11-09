@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 85a733581f4f4da4fb2688e1789f3703
+timeCreated: 1476842612
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: backgear_door
+    100002: backgear_door1
+    100004: backleft_gear
+    100006: backright_gear
+    100008: body
+    100010: extras1
+    100012: frontgear
+    100014: frontgear_door
+    100016: frontgear_door1
+    100018: //RootNode
+    100020: leftrear_flap
+    100022: rightrearflap
+    400000: backgear_door
+    400002: backgear_door1
+    400004: backleft_gear
+    400006: backright_gear
+    400008: body
+    400010: extras1
+    400012: frontgear
+    400014: frontgear_door
+    400016: frontgear_door1
+    400018: //RootNode
+    400020: leftrear_flap
+    400022: rightrearflap
+    2300000: backgear_door
+    2300002: backgear_door1
+    2300004: backleft_gear
+    2300006: backright_gear
+    2300008: body
+    2300010: extras1
+    2300012: frontgear
+    2300014: frontgear_door
+    2300016: frontgear_door1
+    2300018: leftrear_flap
+    2300020: rightrearflap
+    3300000: backgear_door
+    3300002: backgear_door1
+    3300004: backleft_gear
+    3300006: backright_gear
+    3300008: body
+    3300010: extras1
+    3300012: frontgear
+    3300014: frontgear_door
+    3300016: frontgear_door1
+    3300018: leftrear_flap
+    3300020: rightrearflap
+    4300000: body
+    4300002: extras1
+    4300004: frontgear
+    4300006: leftrear_flap
+    4300008: rightrearflap
+    4300010: backgear_door
+    4300012: backgear_door1
+    4300014: frontgear_door
+    4300016: frontgear_door1
+    4300018: backleft_gear
+    4300020: backright_gear
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,20 +7,25 @@ public class Skin : MonoBehaviour {
 	public Material KKDefuse;
 	public GameObject Default;
 	public Material DefaultDefuse;
+	public GameObject PG;
+	public Material PGDefuse;
 
 	public GameObject Body;
 
 
 	// Use this for initialization
 	void Start () {
-		int rand = Random.Range (0, 2);
-		if (rand == 0) {
+		if (PlayerPrefs.GetInt ("DefaultEquiped") == 1) {
+			Default.SetActive (true);
+			Body.GetComponent<Renderer> ().material = DefaultDefuse;
+		}
+		if (PlayerPrefs.GetInt ("KittyCannonEquiped") == 1) {
 			KK.SetActive (true);
 			Body.GetComponent<Renderer> ().material = KKDefuse;
 		}
-		if (rand == 1) {
-			Default.SetActive (true);
-			Body.GetComponent<Renderer> ().material = DefaultDefuse;
+		if (PlayerPrefs.GetInt ("PinappleGunEquiped") == 1) {
+			PG.SetActive (true);
+			Body.GetComponent<Renderer> ().material = PGDefuse;
 		}
 	
 	}

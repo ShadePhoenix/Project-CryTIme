@@ -45,7 +45,7 @@ public class MoreEnemies : MonoBehaviour {
 				}
 				foreach (GameObject enemy in nextenemies) {
 					enemy.GetComponent<EnemyScript>().activate = true;
-					enemy.GetComponent<Animator> ().SetTrigger (Trigger);
+						enemy.GetComponent<Animator> ().SetTrigger (Trigger);
 				}
 				foreach (GameObject obj in objects) {
 					obj.GetComponent<Animator> ().SetTrigger (Trigger);

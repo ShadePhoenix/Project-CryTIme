@@ -16,7 +16,7 @@ public class DestroyBullet : MonoBehaviour {
 	void OnTriggerEnter(Collider col)
 	{
 		if (col.GetComponent<Collider>().tag == "Bullet") {
-			Debug.Log (col);
+			Destroy (col);
 		}
 	}
 

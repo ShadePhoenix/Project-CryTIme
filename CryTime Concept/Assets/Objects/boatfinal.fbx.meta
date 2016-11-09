@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 02b965707fc277642b430aad08810252
+timeCreated: 1476774489
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ammobox
+    100002: barrel
+    100004: base
+    100006: bipod
+    100008: //RootNode
+    100010: commandcontrol
+    100012: engine4
+    100014: gunbase
+    100016: rib
+    100018: seat
+    100020: seat1
+    100022: steel
+    100024: steeringwheel
+    100026: throttle
+    400000: ammobox
+    400002: barrel
+    400004: base
+    400006: bipod
+    400008: //RootNode
+    400010: commandcontrol
+    400012: engine4
+    400014: gunbase
+    400016: rib
+    400018: seat
+    400020: seat1
+    400022: steel
+    400024: steeringwheel
+    400026: throttle
+    2300000: ammobox
+    2300002: barrel
+    2300004: base
+    2300006: bipod
+    2300008: commandcontrol
+    2300010: engine4
+    2300012: gunbase
+    2300014: rib
+    2300016: seat
+    2300018: seat1
+    2300020: steel
+    2300022: steeringwheel
+    2300024: throttle
+    3300000: ammobox
+    3300002: barrel
+    3300004: base
+    3300006: bipod
+    3300008: commandcontrol
+    3300010: engine4
+    3300012: gunbase
+    3300014: rib
+    3300016: seat
+    3300018: seat1
+    3300020: steel
+    3300022: steeringwheel
+    3300024: throttle
+    4300000: commandcontrol
+    4300002: steel
+    4300004: base
+    4300006: rib
+    4300008: bipod
+    4300010: barrel
+    4300012: seat
+    4300014: steeringwheel
+    4300016: throttle
+    4300018: gunbase
+    4300020: ammobox
+    4300022: seat1
+    4300024: engine4
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class Playerhit : MonoBehaviour {
 
 	public RawImage[] health;
-	bool GameOver = false;
-	public Text GO;
+	public bool GameOver = false;
+	public GameObject GO;
 	public GameObject playercamera;
 	bool fade = false;
 	public RawImage hit;
@@ -37,7 +37,25 @@ public class Playerhit : MonoBehaviour {
 
 		if (GameOver) {
 			//if gameover, do this code
-			GO.gameObject.SetActive (true);
+			foreach (RawImage h in health) {
+				if (!h.gameObject.activeSelf) {
+					h.gameObject.SetActive (true);
+				}
+			}
+			GameOver = false;
+			GO.SetActive(true);
+			Time.timeScale = 0.0001f;
+
+		}
+	}
+
+	public void Continue()
+	{
+		GameOver = false;
+		foreach (RawImage h in health) {
+			if (!h.gameObject.activeSelf) {
+				h.gameObject.SetActive (true);
+			}
 		}
 	}
 
@@ -51,19 +69,19 @@ public class Playerhit : MonoBehaviour {
 				//sets the effect to be in full, meaning the camera will be very blury
 				fade = true;
 				Destroy (col.GetComponent<Collider>().gameObject);
-				foreach (RawImage h in health) {
-					//removes a health bar if hit, if hit 3 times, all health will be gone
-					if (h.gameObject.activeSelf) {
-						h.gameObject.SetActive (false);
-						break;
-					}
-				}
 			}
 		}
 	}
 
 	IEnumerator bullethit()
 	{
+		foreach (RawImage h in health) {
+			//removes a health bar if hit, if hit 3 times, all health will be gone
+			if (h.gameObject.activeSelf) {
+				h.gameObject.SetActive (false);
+				break;
+			}
+		}
 		hit.gameObject.SetActive (true);
 		yield return new WaitForSeconds(0.2f);
 		hit.gameObject.SetActive(false);

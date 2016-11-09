@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: ca6abb377f2d78b4eacef7c9a6db4bfb
+timeCreated: 1477464021
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: boltas1
+    100002: boltas2
+    100004: boltas3
+    100006: boltas4
+    100008: Camera
+    100010: Camera.target
+    100012: leg1
+    100014: mars1
+    100016: Mesh01
+    100018: Mesh02
+    100020: Mesh03
+    100022: Mesh04
+    100024: Mesh05
+    100026: Mesh06
+    100028: Model
+    100030: //RootNode
+    100032: screw1
+    100034: screw2
+    100036: screw3
+    100038: screw4
+    100040: screw5
+    100042: screw6
+    100044: screw7
+    100046: screw8
+    400000: boltas1
+    400002: boltas2
+    400004: boltas3
+    400006: boltas4
+    400008: Camera
+    400010: Camera.target
+    400012: leg1
+    400014: mars1
+    400016: Mesh01
+    400018: Mesh02
+    400020: Mesh03
+    400022: Mesh04
+    400024: Mesh05
+    400026: Mesh06
+    400028: Model
+    400030: //RootNode
+    400032: screw1
+    400034: screw2
+    400036: screw3
+    400038: screw4
+    400040: screw5
+    400042: screw6
+    400044: screw7
+    400046: screw8
+    2300000: boltas1
+    2300002: boltas2
+    2300004: boltas3
+    2300006: boltas4
+    2300008: leg1
+    2300010: mars1
+    2300012: Mesh01
+    2300014: Mesh02
+    2300016: Mesh03
+    2300018: Mesh04
+    2300020: Mesh05
+    2300022: Mesh06
+    2300024: Model
+    2300026: screw1
+    2300028: screw2
+    2300030: screw3
+    2300032: screw4
+    2300034: screw5
+    2300036: screw6
+    2300038: screw7
+    2300040: screw8
+    3300000: boltas1
+    3300002: boltas2
+    3300004: boltas3
+    3300006: boltas4
+    3300008: leg1
+    3300010: mars1
+    3300012: Mesh01
+    3300014: Mesh02
+    3300016: Mesh03
+    3300018: Mesh04
+    3300020: Mesh05
+    3300022: Mesh06
+    3300024: Model
+    3300026: screw1
+    3300028: screw2
+    3300030: screw3
+    3300032: screw4
+    3300034: screw5
+    3300036: screw6
+    3300038: screw7
+    3300040: screw8
+    4300000: Model
+    4300002: mars1
+    4300004: leg1
+    4300006: boltas1
+    4300008: screw1
+    4300010: screw2
+    4300012: boltas2
+    4300014: screw3
+    4300016: screw4
+    4300018: boltas3
+    4300020: screw5
+    4300022: screw6
+    4300024: boltas4
+    4300026: screw7
+    4300028: screw8
+    4300030: Mesh01
+    4300032: Mesh02
+    4300034: Mesh03
+    4300036: Mesh04
+    4300038: Mesh05
+    4300040: Mesh06
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
