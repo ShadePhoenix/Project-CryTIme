@@ -18,14 +18,15 @@ public class Skin : MonoBehaviour {
 		if (PlayerPrefs.GetInt ("DefaultEquiped") == 1) {
 			Default.SetActive (true);
 			Body.GetComponent<Renderer> ().material = DefaultDefuse;
-		}
-		if (PlayerPrefs.GetInt ("KittyCannonEquiped") == 1) {
+		} else if (PlayerPrefs.GetInt ("KittyCannonEquiped") == 1) {
 			KK.SetActive (true);
 			Body.GetComponent<Renderer> ().material = KKDefuse;
-		}
-		if (PlayerPrefs.GetInt ("PinappleGunEquiped") == 1) {
+		} else if (PlayerPrefs.GetInt ("PinappleGunEquiped") == 1) {
 			PG.SetActive (true);
 			Body.GetComponent<Renderer> ().material = PGDefuse;
+		} else {
+			Default.SetActive (true);
+			Body.GetComponent<Renderer> ().material = DefaultDefuse;
 		}
 	
 	}

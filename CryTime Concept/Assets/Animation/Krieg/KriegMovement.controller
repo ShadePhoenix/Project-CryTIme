@@ -13,109 +13,109 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Up1
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Up2
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Up3
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Default
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down1
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down2
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down3
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Up4
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Up5
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Up6
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down4
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down5
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down6
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Up7
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down7
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Up8
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down8
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -904,7 +904,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg2Pos2
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000012229097922}
@@ -929,7 +929,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg2Down3
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000012683347120}
@@ -954,7 +954,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: KriegPosDown1
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000013713357994}
@@ -979,7 +979,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg2Pos3
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000013288682862}
@@ -1028,7 +1028,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: KriegNextStage
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000012213379294}
@@ -1052,7 +1052,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: KriegPos2
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000011833455814}
@@ -1077,7 +1077,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg2Down1
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000011583513816}
@@ -1102,7 +1102,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: KriegPosDown3
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000010806447966}
@@ -1127,7 +1127,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg2Down2
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000011627879824}
@@ -1152,7 +1152,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg3Pos2
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000010042250274}
@@ -1176,7 +1176,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg2Pos1
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000012124956146}
@@ -1201,7 +1201,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: KriegPos3
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000011394653672}
@@ -1226,7 +1226,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg3PosDown1
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000013364121786}
@@ -1251,7 +1251,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: KriegPosDown2
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000010905403564}
@@ -1276,7 +1276,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg3Pos1
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000013753608118}
@@ -1301,7 +1301,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: KriegPos1
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000013903726712}
@@ -1326,7 +1326,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Krieg3PosDown2
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000010885743896}

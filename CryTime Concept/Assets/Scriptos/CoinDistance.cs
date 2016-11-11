@@ -9,16 +9,18 @@ public class CoinDistance : MonoBehaviour {
 	void Start () {
 
 		originalpos = transform.position;
-	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+	
+	}
 
-		float dist = Vector3.Distance (originalpos, transform.position);
-		if (dist > 1.5) {
+	void OnCollisionEnter(Collision col)
+	{
+		if (col.collider.tag == "Coin") {
+			Debug.Log("hi");
 			transform.position = originalpos;
 		}
-	
 	}
 }

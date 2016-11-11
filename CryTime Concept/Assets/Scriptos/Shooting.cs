@@ -116,10 +116,12 @@ public class Shooting : MonoBehaviour {
 
 							}
 							if (hit.collider.tag == "Heli") {
+								Instantiate (particle, hit.transform.position, Quaternion.Euler (270, 0, 0));
 								StartCoroutine(dieHeli(hit.collider.gameObject));
 								accuracy.ShotsHit += 1;
 							}
 							if (hit.collider.tag == "Krieg") {
+								Instantiate (particle, hit.transform.position, Quaternion.Euler (270, 0, 0));
 								StartCoroutine(dieKrieg(hit.collider.gameObject));
 								accuracy.ShotsHit += 1;
 							}

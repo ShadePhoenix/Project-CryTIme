@@ -13,6 +13,7 @@ TagManager:
   - Coin
   - Heli
   - Krieg
+  - Floor
   layers:
   - Default
   - TransparentFX

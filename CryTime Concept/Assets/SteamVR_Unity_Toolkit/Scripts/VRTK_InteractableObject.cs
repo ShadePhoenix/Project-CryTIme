@@ -526,7 +526,7 @@ namespace VRTK
                     rb.angularVelocity = Vector3.MoveTowards(rb.angularVelocity, angularTarget, maxDistanceDelta);
                 }
 
-                Vector3 velocityTarget = positionDelta / Time.fixedDeltaTime;
+				Vector3 velocityTarget = positionDelta / Time.timeScale * 1000;
                 rb.velocity = Vector3.MoveTowards(rb.velocity, velocityTarget, maxDistanceDelta);
             }
         }
