@@ -7,6 +7,7 @@ public class CountDown : MonoBehaviour {
 	public Text countdown;
 	public float count = 60;
 	public GameObject player;
+	public GameObject GO;
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +32,8 @@ public class CountDown : MonoBehaviour {
 			countdown.text = "" + Mathf.Round (count);
 
 		} else {
+			GO.SetActive (true);
+			Time.timeScale = 0.0001f;
 			player.GetComponent<Playerhit> ().GameOver = true;
 		}
 	

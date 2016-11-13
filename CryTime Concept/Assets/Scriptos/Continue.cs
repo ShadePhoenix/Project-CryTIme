@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Continue : MonoBehaviour {
 
@@ -48,7 +49,7 @@ public class Continue : MonoBehaviour {
 
 	public void No()
 	{
-
+		SceneManager.LoadScene ("Main Menu");
 	}
 
 }

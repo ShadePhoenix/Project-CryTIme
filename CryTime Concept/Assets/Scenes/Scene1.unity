@@ -30082,7 +30082,7 @@ MonoBehaviour:
   particle: {fileID: 1000012035572170, guid: a5265f37ba8702b42aa9076d47a16351, type: 2}
   HeliPos: {fileID: 1532131044}
   accuracy: {fileID: 237255403}
-  Krieg: {fileID: 0}
+  Krieg: {fileID: 1987922605}
 --- !u!114 &705559880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39951,7 +39951,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 925347831}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1454257390}
+        m_MethodName: No
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &925347831
@@ -41559,6 +41570,7 @@ MonoBehaviour:
   countdown: {fileID: 1007751443}
   count: 65
   player: {fileID: 705559872}
+  GO: {fileID: 1454257388}
 --- !u!114 &1007751443
 MonoBehaviour:
   m_ObjectHideFlags: 0
