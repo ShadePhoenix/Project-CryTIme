@@ -52,7 +52,7 @@ public class Accuracy : MonoBehaviour {
 		TotalShotsFired = Stage1ShotsFired + Stage2ShotsFired + Stage3ShotsFired;
 		WholeShots.text = "(" + TotalShotsHit + "/" + TotalShotsFired + ")";
 		float totalAcc = (float)TotalShotsHit / (float)TotalShotsFired;
-		WholeAcc.text = "" + totalAcc;
+		WholeAcc.text = "" + totalAcc * 100;
 		WholeTime.text = "" + ttime.timertext;
 		Tickets = 200 * totalAcc;
 		Mathf.Round (Tickets);
@@ -99,7 +99,7 @@ public class Accuracy : MonoBehaviour {
 		StageNumber.text = "" + StageNum;
 		AccuracyText.text = "(" + ShotsHit + "/" + ShotsFired + ")";
 		Mathf.Round (AccuracyPercent);
-		TotalAccuracyText.text = "" + AccuracyPercent * 100 + "%";
+		TotalAccuracyText.text = "" + AccuracyPercent * 100;
 	}
 
 	IEnumerator showui ()

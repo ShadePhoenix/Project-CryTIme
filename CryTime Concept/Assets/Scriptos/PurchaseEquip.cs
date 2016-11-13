@@ -102,22 +102,20 @@ public class PurchaseEquip : MonoBehaviour
 
     public void PurchaseEquipHandle()
     {
-		if (skinList[weaponSelector.viewedWeapon].Purchased == 0 && skinList[weaponSelector.viewedWeapon].Equiped == 0)
-        {
-            currentTickets -= skinList[weaponSelector.viewedWeapon].skinPrice;
-            skinList[weaponSelector.viewedWeapon].Purchased = 1;
-			PlayerPrefs.SetInt(skinList [weaponSelector.viewedWeapon].skinName + "Purchased", 1); 
-        }
-		else if (skinList[weaponSelector.viewedWeapon].Purchased == 1 && skinList[weaponSelector.viewedWeapon].Equiped == 0)
-        {
-            for (int i = 0; i < skinList.Count; i++)
-            {
-                skinList[i].Equiped = 0;
-				PlayerPrefs.SetInt (skinList [i].skinName + "Equiped", 0); 
-            }
-            skinList[weaponSelector.viewedWeapon].Equiped = 1;
-			PlayerPrefs.SetInt(skinList [weaponSelector.viewedWeapon].skinName + "Equiped", 1);
-            equipedSkin = skinList[weaponSelector.viewedWeapon].skinNum;
-        }
+		if (currentTickets >= skinList [weaponSelector.viewedWeapon].skinPrice) {
+			if (skinList [weaponSelector.viewedWeapon].Purchased == 0 && skinList [weaponSelector.viewedWeapon].Equiped == 0) {
+				currentTickets -= skinList [weaponSelector.viewedWeapon].skinPrice;
+				skinList [weaponSelector.viewedWeapon].Purchased = 1;
+				PlayerPrefs.SetInt (skinList [weaponSelector.viewedWeapon].skinName + "Purchased", 1); 
+			} else if (skinList [weaponSelector.viewedWeapon].Purchased == 1 && skinList [weaponSelector.viewedWeapon].Equiped == 0) {
+				for (int i = 0; i < skinList.Count; i++) {
+					skinList [i].Equiped = 0;
+					PlayerPrefs.SetInt (skinList [i].skinName + "Equiped", 0); 
+				}
+				skinList [weaponSelector.viewedWeapon].Equiped = 1;
+				PlayerPrefs.SetInt (skinList [weaponSelector.viewedWeapon].skinName + "Equiped", 1);
+				equipedSkin = skinList [weaponSelector.viewedWeapon].skinNum;
+			}
+		}
     }
 }
