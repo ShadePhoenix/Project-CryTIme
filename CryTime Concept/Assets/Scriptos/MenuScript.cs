@@ -8,6 +8,7 @@ public class MenuScript : MonoBehaviour {
 
     void Start()
     {
+        UnityEngine.VR.VRSettings.enabled = false;
         mainMenu.SetActive(true);
         armoryMenu.SetActive(false);
     }

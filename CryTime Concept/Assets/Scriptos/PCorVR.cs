@@ -14,7 +14,8 @@ public class PCorVR : MonoBehaviour {
 	void Start () {
 
 		if (vrON) {
-			foreach (GameObject obj in objects) {
+            UnityEngine.VR.VRSettings.enabled = true;
+            foreach (GameObject obj in objects) {
 				if (obj.layer == 10) {
 					Debug.Log ("hih");
 					obj.gameObject.SetActive (true);
