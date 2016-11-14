@@ -8,6 +8,8 @@ public class TotalTime : MonoBehaviour {
 	public Text timertext;
 	int minute;
 
+	public bool counting = true;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -15,12 +17,14 @@ public class TotalTime : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		timer = timer + Time.deltaTime;
-		timertext.text =  minute + ":" + Mathf.Round(timer * 100f) / 100f;
-		if (timer >= 60) {
-			timer = 0;
-			minute++;
-		}
+		if (counting) {
+			timer = timer + Time.deltaTime;
+			timertext.text = minute + ":" + Mathf.Round (timer * 100f) / 100f;
+			if (timer >= 60) {
+				timer = 0;
+				minute++;
+			}
 	
+		}
 	}
 }
