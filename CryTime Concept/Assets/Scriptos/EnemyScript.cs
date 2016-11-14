@@ -26,6 +26,7 @@ public class EnemyScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//makes sure the enemies dont shoot when moving
 			if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Finished")) {
 				Enemy.GetComponent<Animator> ().SetTrigger ("Default");
 			}
@@ -33,19 +34,20 @@ public class EnemyScript : MonoBehaviour {
 
 	void Shoot()
 	{
-
+		//if the enemy is purple, it shoots multiple times
 		if (transform.name == "EnemyPurple") {
 			if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Ducked")) {
 				Enemy.GetComponent<Animator> ().SetTrigger ("StopShooting");
 			}
 		}
-		
+		//determines a random accuracy between the min and max range given
 		float randx = 0, randy = 0, randz = 0;
 		randx = Random.Range (Min, Max);
 		randy = Random.Range (Min, Max);
 		randz = Random.Range (Min, Max);
 		//Creates a new bullet
 		if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Finished")) {
+			//animates the enemy to shoot
 			Enemy.GetComponent<Animator> ().SetTrigger ("Shooting");
 			StartCoroutine (Delay (randx, randy, randz, gun));
 			if (transform.name == "EnemyRed") {

@@ -46,7 +46,11 @@ public class MoveJets : MonoBehaviour {
 		}
 		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Anim5") && !Jet3Done) {
 			Jet3Done = true;
+			Jet3.SetActive (true);
 			Jet3.GetComponent<Animator> ().SetTrigger ("Animate");
+		}
+		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Anim6")) {
+			Jet3.SetActive (false);
 		}
 	
 	}

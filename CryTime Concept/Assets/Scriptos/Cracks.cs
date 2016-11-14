@@ -19,7 +19,7 @@ public class Cracks : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		//shows cracks depending on health
 		if (!Health1.gameObject.activeSelf) {
 			Crack1.gameObject.SetActive (true);
 		} else {

@@ -17,9 +17,11 @@ public class AcceptCoin : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col)
 	{
+		//checks if coin collides with coin collector
 		if (col.collider.tag == "Coin") {
-            Debug.Log("hi");
+			//if yes, it removes the coin
             col.gameObject.SetActive(false);
+			//it then calls a function in the Continue script to continue the gam
             con.Yes();
 		}
 	}

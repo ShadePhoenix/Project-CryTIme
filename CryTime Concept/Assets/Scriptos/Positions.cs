@@ -6,7 +6,6 @@ using System;
 public class Positions : MonoBehaviour {
 
 	public GameObject player;
-	public GameObject StandBy;
 	public RawImage Engage;
 	bool end = false;
 	public GameObject[] previousenemies;

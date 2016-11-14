@@ -68,37 +68,53 @@ public class Accuracy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//checks what animation state the player is in
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("CutScene3")) {
+			//starts a coroutine
 			StartCoroutine (FinalStageScreen ());
+			//stops the game
 			Time.timeScale = 0;
 		}
 
-
+		//this is a basic timer
 		timer = timer + Time.deltaTime;
 		if (timer >= 60) {
 			timer = 0;
 			minute++;
 		}
-
+		//checks what animation state the player is in
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete1") && stagecom) {
+			//stops this if statement from repeating
 			stagecom = false;
+			//starts coroutine to show the UI
 			StartCoroutine (showui ());
 		} 
+		//checks what animation state the player is in
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete2") && stagecom2) {
+			//stops this if statement from repeating
 			stagecom2 = false;
+			//starts coroutine to show the UI
 			StartCoroutine (showui ());
 		} 
+		//checks what animation state the player is in
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete3") && stagecom3) {
+			//stops this if statement from repeating
 			stagecom3 = false;
+			//starts coroutine to show the UI
 			StartCoroutine (showui ());
 		} 
 
-		//Tickets = 50 * AccuracyPercent;
+		//sets the amount of tickets earned text to be the amount earned in that stage
+		//the tickets are started as a float, the round function rounds the tickets up
+		//to an int
 		TicketsEarned.text = "" + Mathf.Round (Tickets);
+		//this gets the total time of the stage, this does some fancy math to display the
+		//time in a digital clock form
 		TotalTime.text =  minute + ":" + Mathf.Round(timer * 100f) / 100f;
 		StageNumber.text = "" + StageNum;
 		AccuracyText.text = "(" + ShotsHit + "/" + ShotsFired + ")";
 		Mathf.Round (AccuracyPercent);
+		//the accuracy is displayed multiplied by 100 to show a full number eg 98 rather then .8
 		TotalAccuracyText.text = "" + AccuracyPercent * 100;
 	}
 
@@ -106,17 +122,25 @@ public class Accuracy : MonoBehaviour {
 	{
 		yield return new WaitForSecondsRealtime (1);
 		StageResults.SetActive (true);
+		//this checks to make sure you have fired a shot before finding the accuracy
 		if (ShotsHit > 0 && ShotsFired > 0) {
+			//this devides the shots hit and shots fired to find the accuracy
 			float temp = (float)ShotsHit / (float)ShotsFired;
 			AccuracyPercent = temp;
 		}
+		//the amount of tickets earned is multiplied by your accuracy eg 50 * .71
 		Tickets = 50 * AccuracyPercent;
+		//it then rounds the tickets up to an int
 		Mathf.Round (Tickets);
+		//this gets your global ticket count
 		int t = PlayerPrefs.GetInt("TotalTicket");
+		//then adds the tickets earned from this stage to your total tickets
 		t += (int)Tickets;
+		//it then saves this
 		PlayerPrefs.SetInt ("TotalTicket", t);
-
+		//this stops the game so the player can't control anything
 		Time.timeScale = 0;
+		//these statements gets the amount of shots fired and hit for each stage
 		if (Stage1ShotsFired == 0 && Stage1ShotsHit == 0) {
 			Stage1ShotsFired = ShotsFired;
 			Stage1ShotsHit = ShotsHit;
@@ -133,6 +157,7 @@ public class Accuracy : MonoBehaviour {
 		}
 
 		yield return new WaitForSecondsRealtime (4);
+		//sets each variable to 0 upon starting a new stage
 		Tickets = 0;
 		minute = 0;
 		timer = 0;

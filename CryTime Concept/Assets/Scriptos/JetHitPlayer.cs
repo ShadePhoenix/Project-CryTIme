@@ -14,6 +14,7 @@ public class JetHitPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//also makes sure the jet kills enemies
 		foreach (GameObject enemy in enemies) {
 			float dist = Vector3.Distance (enemy.transform.position, transform.position);
 			dist *= 100;
@@ -27,6 +28,7 @@ public class JetHitPlayer : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col)
 	{
+		//if the jet hits the player, it removes health
 		if (col.collider.name == "Player") {
 			playerhit.StartCoroutine ("bullethit");
 		}
@@ -34,6 +36,7 @@ public class JetHitPlayer : MonoBehaviour {
 
 	IEnumerator die (GameObject enemy)
 	{
+		//animates the enemies if they die by the jet
 		enemy.GetComponent<EnemyScript> ().Enemy.GetComponent<Animator>().SetTrigger("Death");
 		Instantiate (particle, enemy.transform.position, Quaternion.Euler (270, 0, 0));
 		yield return new WaitForSeconds (.5f);

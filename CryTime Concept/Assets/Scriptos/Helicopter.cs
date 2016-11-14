@@ -23,7 +23,7 @@ public class Helicopter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		//if the helis health gets to 0, animate it crashing
 		if (Health <= 0 && !crashed) {
 			crashed = true;
 			transform.GetComponent<Animator> ().SetTrigger ("Crash");

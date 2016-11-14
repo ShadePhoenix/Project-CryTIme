@@ -22,14 +22,13 @@ public class Continue : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//this shows a 10 second down in the game over screen
 		ContinuesText.text = "Continues: " + Continues;
 		if (transform.gameObject.activeSelf) {
 			if (time >= 0) {
 				time = time - Time.deltaTime * 10000;
 				Seconds.text = "" + Mathf.Round (time);
-			} else {
-
-			}
+			} 
 
 		}
 	
@@ -37,6 +36,7 @@ public class Continue : MonoBehaviour {
 
 	public void Yes()
 	{
+		//this is a function that goes on a button, when it's pressed, itll continue the game
 		if (Continues > 0) {
 			Time.timeScale = 1;
 			Continues = Continues - 1;
@@ -49,6 +49,7 @@ public class Continue : MonoBehaviour {
 
 	public void No()
 	{
+		//if clicked, it changes the scene to the main menu
 		SceneManager.LoadScene ("Main Menu");
 	}
 

@@ -13,7 +13,7 @@ public class EnemyDieSafety : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		//safety code incase the enemies don't die when they are meant too
 		if (transform.GetChild(0).GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("Dead") && once) {
 			once = false;
 			StartCoroutine (die ());
@@ -23,6 +23,7 @@ public class EnemyDieSafety : MonoBehaviour {
 
 	IEnumerator die()
 	{
+		//adds a particle to the enemies on death
 		Instantiate (particle, transform.position, Quaternion.Euler (270, 0, 0));
 		yield return new WaitForSeconds (1);
 		transform.gameObject.SetActive (false);

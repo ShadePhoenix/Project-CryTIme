@@ -36,6 +36,7 @@ public class AddTime : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		//this checks if there are enemies left in each stage
 		foreach (Stage obj in stages) {
 			if (!obj.done) {
 				foreach (GameObject enemy in obj.objects) {
@@ -48,6 +49,7 @@ public class AddTime : MonoBehaviour {
 				}
 			}
 		}
+		//if there are none alive, it will add time 
 		foreach (Stage obj in stages) {
 			if (obj.com) {
 				obj.done = true;

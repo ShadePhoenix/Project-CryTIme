@@ -15,6 +15,7 @@ public class Skin : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//this checks what gun has been selected and equipped
 		if (PlayerPrefs.GetInt ("DefaultEquiped") == 1) {
 			Default.SetActive (true);
 			Body.GetComponent<Renderer> ().material = DefaultDefuse;

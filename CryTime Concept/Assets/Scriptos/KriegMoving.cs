@@ -29,7 +29,7 @@ public class KriegMoving : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		//depending on kriegs health will depend on where he comes in and out from
 		if (health <= 40) {
 			player.GetComponent<Animator> ().SetTrigger ("SecondBossPart");
 			transform.GetComponent<Animator> ().SetTrigger ("Animate");
@@ -78,6 +78,7 @@ public class KriegMoving : MonoBehaviour {
 
 	void GoToCover()
 	{
+		//a bunch of different animations and positions depending on health
 		if (health > 50) {
 			transform.GetComponent<Animator> ().SetTrigger ("Up1");
 			co = InCover ("Up1", "Down1");

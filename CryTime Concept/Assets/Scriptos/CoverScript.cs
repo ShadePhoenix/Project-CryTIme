@@ -35,7 +35,7 @@ public class CoverScript : MonoBehaviour {
 			crouch = false;
 				GetComponent<Animator> ().SetTrigger (Default);
 			}
-
+		//Adds all bullets back to the clip
 		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag("Engage") && engage) {
 			engage = false;
 			foreach (RawImage bullet in bullets) {
@@ -43,11 +43,13 @@ public class CoverScript : MonoBehaviour {
 					bullet.gameObject.SetActive (true);
 				}
 			}
+			//plays the reload sound
 			transform.GetComponent<PlaySounds> ().Reload ();
+			//reload animation plays
 			gun.GetComponent<Animator> ().SetTrigger ("Trig");
 			StartCoroutine (wait ());
 		}
-
+		//similar code yet when in cover and if you need to reload
 		if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Cover")) {
 			if (!reloaded) {
 				reloaded = true;
