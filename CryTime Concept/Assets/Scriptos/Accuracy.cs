@@ -62,6 +62,7 @@ public class Accuracy : MonoBehaviour {
 		WholeTickets.text = "" + Mathf.Round (Tickets);
 		FinalResults.SetActive (true);
 		yield return new WaitForSecondsRealtime (5);
+		FinalResults.SetActive (false);
 		Time.timeScale = 1;
 
 	}
