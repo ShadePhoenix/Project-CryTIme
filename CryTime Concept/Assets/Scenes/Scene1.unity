@@ -34555,7 +34555,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.23, y: 2.4, z: 21.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 359.882, y: 110.452, z: 1.9660001}
+  m_LocalEulerAnglesHint: {x: -0.46100003, y: 268.523, z: 361.257}
   m_Children:
   - {fileID: 1662035694}
   m_Father: {fileID: 0}
@@ -34776,6 +34776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Jet1: {fileID: 1179113727}
   Jet2: {fileID: 1071295411}
+  Jet2Done: 0
   Jet3: {fileID: 280983454}
   Danger: {fileID: 334079097}
   time: 0
@@ -34795,6 +34796,11 @@ MonoBehaviour:
   machine: {fileID: 900663804}
   GunSounds: {fileID: 8300000, guid: 7ba4e083e5261bf4aa51ecffcc53ce6c, type: 3}
   ReloadSounds: {fileID: 8300000, guid: 8e960ab5ba9c797499c289f63258da3a, type: 3}
+  Engage: {fileID: 8300000, guid: 24f9841b337383249a31b8015493e50c, type: 3}
+  StandBy: {fileID: 8300000, guid: c4ef0f277dfb651428928e5a5e227651, type: 3}
+  Danger: {fileID: 8300000, guid: 69c291a2b1073cd4c8d0c1de282c26d0, type: 3}
+  warning: {fileID: 8300000, guid: f77afcf9d2e93a340960f6f3e7f2efb8, type: 3}
+  dangerjet: {fileID: 705559884}
 --- !u!1 &713319201
 GameObject:
   m_ObjectHideFlags: 0

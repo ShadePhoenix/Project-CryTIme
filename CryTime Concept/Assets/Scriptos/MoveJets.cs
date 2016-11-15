@@ -7,7 +7,7 @@ public class MoveJets : MonoBehaviour {
 	public GameObject Jet1;
 	bool Jet1Done = false;
 	public GameObject Jet2;
-	bool Jet2Done = false;
+	public bool Jet2Done = false;
 	public GameObject Jet3;
 	bool Jet3Done = false;
 	public RawImage Danger;
