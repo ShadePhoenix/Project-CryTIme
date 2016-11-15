@@ -1091,6 +1091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 284876148}
   armoryMenu: {fileID: 700267616}
+  Title: {fileID: 8300000, guid: 87086afe5d8d76a4db58e96741db5b23, type: 3}
 --- !u!4 &748267166
 Transform:
   m_ObjectHideFlags: 0
@@ -2485,7 +2486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1799638604
 RectTransform:
   m_ObjectHideFlags: 0

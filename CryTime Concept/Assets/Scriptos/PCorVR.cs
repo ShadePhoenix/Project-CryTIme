@@ -12,9 +12,10 @@ public class PCorVR : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		UnityEngine.VR.VRSettings.enabled = true;
 
-		if (vrON) {
-            UnityEngine.VR.VRSettings.enabled = true;
+		if (UnityEngine.VR.VRSettings.enabled)
+		{
             foreach (GameObject obj in objects) {
 				if (obj.layer == 10) {
 					Debug.Log ("hih");

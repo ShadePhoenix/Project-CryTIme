@@ -46,7 +46,7 @@ public class PlaySounds : MonoBehaviour {
 				if (VRMode.gameObject.activeSelf) {
 					AudioSource.PlayClipAtPoint (Engage, machine.transform.position);
 				} else {
-					AudioSource.PlayClipAtPoint (Engage, FPSCam.transform.position);
+					FPSCam.GetComponent<AudioSource> ().PlayOneShot (Engage);
 				}
 			}
 		}
@@ -58,7 +58,7 @@ public class PlaySounds : MonoBehaviour {
 					if (VRMode.gameObject.activeSelf) {
 						AudioSource.PlayClipAtPoint (StandBy, machine.transform.position);
 					} else {
-						AudioSource.PlayClipAtPoint (StandBy, FPSCam.transform.position);
+						FPSCam.GetComponent<AudioSource> ().PlayOneShot (StandBy);
 					}
 				}
 			}
@@ -69,7 +69,7 @@ public class PlaySounds : MonoBehaviour {
 					if (VRMode.gameObject.activeSelf) {
 						AudioSource.PlayClipAtPoint (Danger, machine.transform.position);
 					} else {
-						AudioSource.PlayClipAtPoint (Danger, FPSCam.transform.position);
+					FPSCam.GetComponent<AudioSource> ().PlayOneShot (Danger);
 					}
 				}
 		}
@@ -79,7 +79,7 @@ public class PlaySounds : MonoBehaviour {
 				if (VRMode.gameObject.activeSelf) {
 					AudioSource.PlayClipAtPoint (warning, machine.transform.position);
 				} else {
-					AudioSource.PlayClipAtPoint (warning, FPSCam.transform.position);
+					FPSCam.GetComponent<AudioSource> ().PlayOneShot (warning);
 				}
 				playoneshot = false;
 			}
@@ -91,7 +91,7 @@ public class PlaySounds : MonoBehaviour {
 		if (VRMode.gameObject.activeSelf) {
 			AudioSource.PlayClipAtPoint (GunSounds, machine.transform.position);
 		} else {
-			AudioSource.PlayClipAtPoint (GunSounds, FPSCam.transform.position);
+			FPSCam.GetComponent<AudioSource> ().PlayOneShot (GunSounds);
 		}
 	}
 
@@ -100,7 +100,7 @@ public class PlaySounds : MonoBehaviour {
 		if (VRMode.gameObject.activeSelf) {
 			AudioSource.PlayClipAtPoint (ReloadSounds, machine.transform.position);
 		} else {
-			AudioSource.PlayClipAtPoint (ReloadSounds, FPSCam.transform.position);
+			FPSCam.GetComponent<AudioSource> ().PlayOneShot (ReloadSounds);
 		}
 	}
 	
