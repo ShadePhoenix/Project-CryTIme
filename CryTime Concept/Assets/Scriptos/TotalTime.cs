@@ -6,7 +6,7 @@ public class TotalTime : MonoBehaviour {
 
 	public float timer;
 	public Text timertext;
-	int minute;
+	public int minute;
 
 	public bool counting = true;
 

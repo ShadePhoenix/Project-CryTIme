@@ -24,7 +24,7 @@ public class PurchaseEquip : MonoBehaviour
 
 	public int firstload;
 
-    int currentTickets;
+    public int currentTickets;
 
     public int equipedSkin;
 
@@ -107,7 +107,8 @@ public class PurchaseEquip : MonoBehaviour
 				currentTickets -= skinList [weaponSelector.viewedWeapon].skinPrice;
 				skinList [weaponSelector.viewedWeapon].Purchased = 1;
 				PlayerPrefs.SetInt (skinList [weaponSelector.viewedWeapon].skinName + "Purchased", 1); 
-			} else if (skinList [weaponSelector.viewedWeapon].Purchased == 1 && skinList [weaponSelector.viewedWeapon].Equiped == 0) {
+			}
+			} if (skinList [weaponSelector.viewedWeapon].Purchased == 1 && skinList [weaponSelector.viewedWeapon].Equiped == 0) {
 				for (int i = 0; i < skinList.Count; i++) {
 					skinList [i].Equiped = 0;
 					PlayerPrefs.SetInt (skinList [i].skinName + "Equiped", 0); 
@@ -116,6 +117,7 @@ public class PurchaseEquip : MonoBehaviour
 				PlayerPrefs.SetInt (skinList [weaponSelector.viewedWeapon].skinName + "Equiped", 1);
 				equipedSkin = skinList [weaponSelector.viewedWeapon].skinNum;
 			}
-		}
+		
+
     }
 }

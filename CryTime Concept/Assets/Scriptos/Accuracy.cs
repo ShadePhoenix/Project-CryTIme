@@ -53,7 +53,7 @@ public class Accuracy : MonoBehaviour {
 		WholeShots.text = "(" + TotalShotsHit + "/" + TotalShotsFired + ")";
 		float totalAcc = (float)TotalShotsHit / (float)TotalShotsFired;
 		WholeAcc.text = "" + totalAcc * 100;
-		WholeTime.text = "" + ttime.timertext;
+		WholeTime.text =  ttime.minute + ":" + Mathf.Round(ttime.timer * 100f) / 100f;
 		Tickets = 200 * totalAcc;
 		Mathf.Round (Tickets);
 		int t = PlayerPrefs.GetInt("TotalTicket");
@@ -61,15 +61,15 @@ public class Accuracy : MonoBehaviour {
 		PlayerPrefs.SetInt ("TotalTicket", t);
 		WholeTickets.text = "" + Mathf.Round (Tickets);
 		FinalResults.SetActive (true);
-		yield return new WaitForSeconds (5);
-		SceneManager.LoadScene ("Main Menu");
+		yield return new WaitForSecondsRealtime (5);
+		Time.timeScale = 1;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//checks what animation state the player is in
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("CutScene3")) {
+		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("CutScene2")) {
 			//starts a coroutine
 			StartCoroutine (FinalStageScreen ());
 			//stops the game

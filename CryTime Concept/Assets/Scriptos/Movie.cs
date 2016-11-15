@@ -26,8 +26,8 @@ public class Movie : MonoBehaviour {
 	{
 		rawImageComp.texture = movie;
 		movie.Play ();
-//		audioS.clip = movie.audioClip;
-//		audioS.Play ();
+		audioS.clip = movie.audioClip;
+		audioS.Play ();
 	}
 	
 	// Update is called once per frame

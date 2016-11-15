@@ -1004,7 +1004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &700267617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1120,6 +1120,7 @@ MonoBehaviour:
   ticketCounter: {fileID: 848857764}
   skinName: {fileID: 2097713643}
   firstload: 1
+  currentTickets: 0
   equipedSkin: 0
   priceMat: {fileID: 21300000, guid: db39bc10d39c1ff4dac233b4dd20e6bf, type: 3}
   equipMat: {fileID: 21300000, guid: 7a2853c8df1e0f94293f825be2027262, type: 3}
@@ -2211,7 +2212,7 @@ Canvas:
   m_GameObject: {fileID: 1466157158}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1737026192}
   m_PlaneDistance: 100
   m_PixelPerfect: 1

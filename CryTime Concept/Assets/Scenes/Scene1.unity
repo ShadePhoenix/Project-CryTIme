@@ -12457,7 +12457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb8cdc8303c99646b8351db0d4d1fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ttime: {fileID: 0}
+  ttime: {fileID: 2000990624}
   ShotsFired: 0
   ShotsHit: 0
   AccuracyText: {fileID: 564006534}
@@ -12516,7 +12516,7 @@ MonoBehaviour:
   player: {fileID: 705559872}
   MovieUI: {fileID: 1187690268}
   img: {fileID: 1187690270}
-  Tag: CutScene2
+  Tag: CutScene3
   tt: {fileID: 2000990624}
   cd: {fileID: 1007751442}
   audioS: {fileID: 705559873}
@@ -34761,8 +34761,8 @@ MonoBehaviour:
   - {fileID: 765627455}
   - {fileID: 1428443573}
   admin: {fileID: 2026109067}
-  SkipDistance: 20
-  SkipSpeed: 10
+  SkipDistance: 30
+  SkipSpeed: 50
 --- !u!114 &705559884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88853,6 +88853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   timertext: {fileID: 2000990622}
+  minute: 0
   counting: 1
 --- !u!1001 &2004942002
 Prefab:
