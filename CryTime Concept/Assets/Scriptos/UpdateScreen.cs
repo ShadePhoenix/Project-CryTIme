@@ -9,6 +9,7 @@ public class UpdateScreen : MonoBehaviour {
 	void Start () {
 
 		renderer = GetComponent<Renderer> ();
+		DynamicGI.UpdateMaterials (renderer);
 	
 	}
 	
