@@ -16,8 +16,11 @@ public class Helicopter : MonoBehaviour {
 	bool done = false;
 	bool crashed = false;
 
+	Animator anim;
+
 	// Use this for initialization
 	void Start () {
+		anim = transform.GetComponent<Animator> ();
 		StartCoroutine (keepshooting ());
 	}
 	
@@ -30,11 +33,11 @@ public class Helicopter : MonoBehaviour {
 			Instantiate (Explosion, transform.position, Quaternion.Euler (270, 0, 0));
 		}
 
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Finished")) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Finished")) {
 			transform.gameObject.SetActive (false);
 		}
 
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName (Location) && !done) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName (Location) && !done) {
 			done = true;
 			transform.GetComponent<Animator> ().SetTrigger ("Animate2");
 		}

@@ -20,10 +20,12 @@ public class PlaySounds : MonoBehaviour {
 	bool DoDanger = true;
 	bool DoWarning = true;
 
+	Animator anim;
+
 
 	// Use this for initialization
 	void Start () {
-	
+		anim = FPSCam.GetComponent<Animator> ();
 	}
 
 	IEnumerator waitStandby()
@@ -39,7 +41,7 @@ public class PlaySounds : MonoBehaviour {
 
 	void Update()
 	{
-		if (FPSCam.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag("Engage")) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag("Engage")) {
 			if (DoEngage) {
 				DoEngage = false;
 				StartCoroutine (waitEngage());
@@ -50,11 +52,11 @@ public class PlaySounds : MonoBehaviour {
 				}
 			}
 		}
-		if (FPSCam.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag("Moving")) {
+				if (anim.GetCurrentAnimatorStateInfo (0).IsTag("Moving")) {
 			if (DoStandBy) {
 				DoStandBy = false;
 				StartCoroutine (waitStandby ());
-				if (!FPSCam.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Tower13Anim")) {
+						if (!anim.GetCurrentAnimatorStateInfo (0).IsName ("Tower13Anim")) {
 					if (VRMode.gameObject.activeSelf) {
 						AudioSource.PlayClipAtPoint (StandBy, machine.transform.position);
 					} else {
@@ -63,7 +65,7 @@ public class PlaySounds : MonoBehaviour {
 				}
 			}
 		}
-		if (FPSCam.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("CoverDown4 0")) {
+				if (anim.GetCurrentAnimatorStateInfo (0).IsName ("CoverDown4 0")) {
 				if (DoDanger) {
 					DoDanger = false;
 					if (VRMode.gameObject.activeSelf) {
@@ -73,7 +75,7 @@ public class PlaySounds : MonoBehaviour {
 					}
 				}
 		}
-		if (FPSCam.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Tower13Anim")) {
+				if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Tower13Anim")) {
 			if (playoneshot) {
 				FPSCam.GetComponent<AudioSource> ().Stop ();
 				if (VRMode.gameObject.activeSelf) {

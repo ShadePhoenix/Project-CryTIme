@@ -42,8 +42,11 @@ public class Accuracy : MonoBehaviour {
 	bool stagecom2 = true;
 	bool stagecom3 = true;
 
+	Animator anim;
+
 	// Use this for initialization
 	void Start () {
+		anim = player.GetComponent<Animator> ();
 	}
 
 	IEnumerator FinalStageScreen()
@@ -70,7 +73,7 @@ public class Accuracy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//checks what animation state the player is in
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("CutScene2")) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("CutScene2")) {
 			//starts a coroutine
 			StartCoroutine (FinalStageScreen ());
 			//stops the game
@@ -84,21 +87,21 @@ public class Accuracy : MonoBehaviour {
 			minute++;
 		}
 		//checks what animation state the player is in
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete1") && stagecom) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete1") && stagecom) {
 			//stops this if statement from repeating
 			stagecom = false;
 			//starts coroutine to show the UI
 			StartCoroutine (showui ());
 		} 
 		//checks what animation state the player is in
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete2") && stagecom2) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete2") && stagecom2) {
 			//stops this if statement from repeating
 			stagecom2 = false;
 			//starts coroutine to show the UI
 			StartCoroutine (showui ());
 		} 
 		//checks what animation state the player is in
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete3") && stagecom3) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("StageComplete3") && stagecom3) {
 			//stops this if statement from repeating
 			stagecom3 = false;
 			//starts coroutine to show the UI

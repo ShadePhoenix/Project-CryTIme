@@ -7,11 +7,14 @@ public class EnemyDieSafety : MonoBehaviour {
 
 	bool once = true;
 
+	GameObject obj;
+
 	Animator anim;
 
 	// Use this for initialization
 	void Start () {
-		anim = transform.GetChild (0).GetComponent<Animator> ();
+		obj = transform.GetChild (0).gameObject;
+		anim = obj.GetComponent<Animator> ();
 	}
 
 
@@ -19,11 +22,12 @@ public class EnemyDieSafety : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//safety code incase the enemies don't die when they are meant too
-		if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Dead") && once) {
-			once = false;
-			StartCoroutine (die ());
+		if (anim.isActiveAndEnabled) {
+			if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("Dead") && once) {
+				once = false;
+				StartCoroutine (die ());
+			}
 		}
-	
 	}
 
 	IEnumerator die()
@@ -32,5 +36,6 @@ public class EnemyDieSafety : MonoBehaviour {
 		Instantiate (particle, transform.position, Quaternion.Euler (270, 0, 0));
 		yield return new WaitForSeconds (1);
 		transform.gameObject.SetActive (false);
+		Destroy (particle.gameObject, 2f);
 	}
 }

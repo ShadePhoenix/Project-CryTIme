@@ -18,7 +18,6 @@ public class PCorVR : MonoBehaviour {
 		{
             foreach (GameObject obj in objects) {
 				if (obj.layer == 10) {
-					Debug.Log ("hih");
 					obj.gameObject.SetActive (true);
 				}
 			}

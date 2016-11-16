@@ -17,8 +17,11 @@ public class CoverScript : MonoBehaviour {
 	bool empty;
 	bool engage = true;
 
+	Animator anim;
+
 	// Use this for initialization
 	void Start () {
+		anim = transform.GetComponent<Animator> ();
 	}
 
 	IEnumerator wait()
@@ -36,7 +39,7 @@ public class CoverScript : MonoBehaviour {
 				GetComponent<Animator> ().SetTrigger (Default);
 			}
 		//Adds all bullets back to the clip
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag("Engage") && engage) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag("Engage") && engage) {
 			engage = false;
 			foreach (RawImage bullet in bullets) {
 				if (bullet.gameObject.activeSelf == false) {
@@ -50,7 +53,7 @@ public class CoverScript : MonoBehaviour {
 			StartCoroutine (wait ());
 		}
 		//similar code yet when in cover and if you need to reload
-		if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Cover")) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("Cover")) {
 			if (!reloaded) {
 				reloaded = true;
 				empty = false;

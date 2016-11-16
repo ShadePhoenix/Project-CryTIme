@@ -15,41 +15,42 @@ public class MoveJets : MonoBehaviour {
 
 	private bool startflash = false;
 	private bool stop = true;
+	Animator anim;
 
 	// Use this for initialization
 	void Start () {
-	
+		anim = transform.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Cover") && Jet2Done) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("Cover") && Jet2Done) {
 			if (stop == true) {
 				Danger.gameObject.SetActive (false);
 			}
 		}
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("OutOfCover") && Jet2Done) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("OutOfCover") && Jet2Done) {
 			if (stop == true) {
 				Danger.gameObject.SetActive (true);
 			}
 		}
 
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("OutOfCover 1") && !Jet1Done) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("OutOfCover 1") && !Jet1Done) {
 			Jet1Done = true;
 			Jet1.GetComponent<Animator> ().SetTrigger ("Animate");
 		}
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("CoverDown4 0") && !Jet2Done) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("CoverDown4 0") && !Jet2Done) {
 			Jet2Done = true;
 			StartCoroutine (waitforsecs ());
 			Jet2.GetComponent<Animator> ().SetTrigger ("Animate");
 		}
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Anim5") && !Jet3Done) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anim5") && !Jet3Done) {
 			Jet3Done = true;
 			Jet3.SetActive (true);
 			Jet3.GetComponent<Animator> ().SetTrigger ("Animate");
 		}
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Anim6")) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anim6")) {
 			Jet3.SetActive (false);
 		}
 	

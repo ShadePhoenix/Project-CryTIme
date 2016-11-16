@@ -19,18 +19,19 @@ public class Positions : MonoBehaviour {
 	public GameObject secondenemy;
 
 	bool start = true;
+	Animator anim;
 
 
 	// Use this for initialization
 	void Start () {
-
-		}
+		anim = player.GetComponent<Animator> ();
+	}
 	
 	// Update is called once per frame
 	void Update () {
 		firstenemy.GetComponent<EnemyScript> ().activate = true;
 		secondenemy.GetComponent<EnemyScript> ().activate = true;
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
 			Engage.gameObject.SetActive (true);
 		} else {
 			Engage.gameObject.SetActive (false);

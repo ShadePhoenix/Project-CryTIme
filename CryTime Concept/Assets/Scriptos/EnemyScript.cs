@@ -18,18 +18,25 @@ public class EnemyScript : MonoBehaviour {
 	GameObject particle;
 	public float bulletLifeTime = 2f;
 
+	Animator anim;
+
 	// Use this for initialization
 	void Start () {
 	//starts the loop
+		anim = GetComponent<Animator> ();
 		StartCoroutine ("Timer");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//makes sure the enemies dont shoot when moving
-			if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Finished")) {
-				Enemy.GetComponent<Animator> ().SetTrigger ("Default");
+		if (anim.isActiveAndEnabled) {
+			if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("Finished")) {
+				if (Enemy.activeSelf) {
+					Enemy.GetComponent<Animator> ().SetTrigger ("Default");
+				}
 			}
+		}
 	}
 
 	void Shoot()
@@ -117,7 +124,7 @@ public class EnemyScript : MonoBehaviour {
 
 		//Destroy bullet gameobject after specified time
 		Destroy (newbullet.gameObject, bulletLifeTime);
-		Destroy (particle, .2f);
+		Destroy (particle.gameObject, .2f);
 	}
 
 

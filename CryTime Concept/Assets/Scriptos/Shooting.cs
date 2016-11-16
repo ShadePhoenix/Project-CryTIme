@@ -31,16 +31,18 @@ public class Shooting : MonoBehaviour {
 	bool removeReload;
 
 	bool onesound = true;
+	Animator anim;
 
 	// Use this for initialization
 	void Start (){
 		Cursor.SetCursor (cursor, hotspot, cursormode);
+		anim = transform.GetComponent<Animator> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("Engage")) {
 			Reload.gameObject.SetActive (false);		
 		}
 
@@ -76,7 +78,7 @@ public class Shooting : MonoBehaviour {
 			fire = false;
 
 			if (!reloadin) {
-				if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("OutOfCover")) {
+				if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("OutOfCover")) {
 			
 					//gets the mouse position ray
 					foreach (RawImage bullet in clip) {
