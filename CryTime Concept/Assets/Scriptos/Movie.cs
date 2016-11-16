@@ -33,11 +33,13 @@ public class Movie : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
 		if (!movie.isPlaying && !onetime) {
 			cd.counting = true;
 			tt.counting = true;
 			onetime = true;
 			MovieUI.SetActive (false);
+			player.GetComponent<Animator> ().SetTrigger ("trig");
 			player.GetComponent<Animator> ().SetTrigger ("CutSceneFin");
 		}
 
@@ -54,6 +56,7 @@ public class Movie : MonoBehaviour {
 		if (!movie.isPlaying && !onetime) {
 			player.GetComponent<Animator> ().SetTrigger ("done");
 		}
+
 	
 	}
 }

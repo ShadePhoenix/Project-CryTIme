@@ -26,8 +26,11 @@ public class Shooting : MonoBehaviour {
 	public GameObject HeliPos;
 	public Accuracy accuracy;
 	public GameObject Krieg;
+	public AudioClip ReloadSpeak;
 	Ray RayInGame;
 	bool removeReload;
+
+	bool onesound = true;
 
 	// Use this for initialization
 	void Start (){
@@ -98,6 +101,12 @@ public class Shooting : MonoBehaviour {
 						Reload.gameObject.SetActive (true);
 					} 
 
+					if (outofammo && onesound) {
+						onesound = false;
+						transform.GetComponent<AudioSource> ().PlayOneShot (ReloadSpeak);
+						StartCoroutine (wait ());
+					}
+
 
 					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 					RaycastHit hit2;
@@ -156,6 +165,12 @@ public class Shooting : MonoBehaviour {
 
 			}
 		}
+
+	IEnumerator wait()
+	{
+		yield return new WaitForSeconds (2);
+		onesound = true;
+	}
 
 	IEnumerator die (GameObject enemy)
 	{

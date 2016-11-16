@@ -7,14 +7,19 @@ public class EnemyDieSafety : MonoBehaviour {
 
 	bool once = true;
 
+	Animator anim;
+
 	// Use this for initialization
 	void Start () {
+		anim = transform.GetChild (0).GetComponent<Animator> ();
 	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
 		//safety code incase the enemies don't die when they are meant too
-		if (transform.GetChild(0).GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("Dead") && once) {
+		if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Dead") && once) {
 			once = false;
 			StartCoroutine (die ());
 		}

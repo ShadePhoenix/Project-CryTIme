@@ -27,7 +27,7 @@ public class AddTime : MonoBehaviour {
 
 	}
 
-	IEnumerator Extend()
+	public IEnumerator Extend()
 	{
 		Extended.gameObject.SetActive (true);
 		yield return new WaitForSeconds (1);
