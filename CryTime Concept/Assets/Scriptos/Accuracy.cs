@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Accuracy : MonoBehaviour {
 
-
+	public AudioClip completesound;
 	public TotalTime ttime;
 	public int ShotsFired;
 	public int ShotsHit;
@@ -125,6 +125,7 @@ public class Accuracy : MonoBehaviour {
 	IEnumerator showui ()
 	{
 		yield return new WaitForSecondsRealtime (1);
+		player.GetComponent<AudioSource> ().PlayOneShot (completesound);
 		StageResults.SetActive (true);
 		//this checks to make sure you have fired a shot before finding the accuracy
 		if (ShotsHit > 0 && ShotsFired > 0) {

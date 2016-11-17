@@ -6,9 +6,7 @@ public class EnemyDieSafety : MonoBehaviour {
 	public GameObject particle;
 
 	bool once = true;
-
 	GameObject obj;
-
 	Animator anim;
 
 	// Use this for initialization
@@ -36,6 +34,6 @@ public class EnemyDieSafety : MonoBehaviour {
 		Instantiate (particle, transform.position, Quaternion.Euler (270, 0, 0));
 		yield return new WaitForSeconds (1);
 		transform.gameObject.SetActive (false);
-		Destroy (particle.gameObject, 2f);
+
 	}
 }

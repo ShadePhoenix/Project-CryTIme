@@ -14,6 +14,7 @@ public class EnemyScript : MonoBehaviour {
 	public GameObject gun;
 	public GameObject gun2;
 	public GameObject MuzzleNormal;
+	public AudioClip GunSound;
 
 	GameObject particle;
 	public float bulletLifeTime = 2f;
@@ -117,6 +118,7 @@ public class EnemyScript : MonoBehaviour {
 	{
 		yield return new WaitForSeconds (.5f);
 		particle = Instantiate (MuzzleNormal, gun.transform.position, gun.transform.rotation) as GameObject;
+		transform.GetComponent<AudioSource> ().PlayOneShot (GunSound);
 		newbullet = Instantiate (bullet, Gun.transform.position, gun.transform.rotation) as Rigidbody;
 		//shoots the bullet towards the player
 		newbullet.velocity = ((player.transform.position + new Vector3(rand1, rand2, rand3)) - newbullet.transform.position).normalized * 50;

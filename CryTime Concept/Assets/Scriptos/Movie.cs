@@ -19,7 +19,7 @@ public class Movie : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		Time.timeScale = 0;
 	}
 
 	void PlayClip()
@@ -33,8 +33,19 @@ public class Movie : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (Input.GetMouseButton (0)) {
+			if (movie.isPlaying) {
+				cd.counting = true;
+				tt.counting = true;
+				Time.timeScale = 1;
+				MovieUI.SetActive (false);
+				player.GetComponent<Animator> ().SetTrigger ("trig");
+			}
+		}
+
 
 		if (!movie.isPlaying && !onetime) {
+			Time.timeScale = 1;
 			cd.counting = true;
 			tt.counting = true;
 			onetime = true;
@@ -43,7 +54,9 @@ public class Movie : MonoBehaviour {
 			player.GetComponent<Animator> ().SetTrigger ("CutSceneFin");
 		}
 
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag) && onetime) {
+		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag) && onetime) 
+		{
+			Time.timeScale = 0;
 			cd.counting = false;
 			tt.counting = false;
 			onetime = false;
@@ -54,6 +67,7 @@ public class Movie : MonoBehaviour {
 		}
 
 		if (!movie.isPlaying && !onetime) {
+			Time.timeScale = 1;
 			player.GetComponent<Animator> ().SetTrigger ("done");
 		}
 
