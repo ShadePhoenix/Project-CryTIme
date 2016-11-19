@@ -29,30 +29,28 @@ public class Movie : MonoBehaviour {
 		audioS.clip = movie.audioClip;
 		audioS.Play ();
 	}
+
+	IEnumerator wait()
+	{
+		yield return new WaitForSeconds (1);
+		onetime = true;
+	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (Input.GetMouseButton (0)) {
-			if (movie.isPlaying) {
+		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag)) {
+			if (movie.isPlaying == false && !onetime) {
+				StartCoroutine (wait ());
+				Time.timeScale = 1;
 				cd.counting = true;
 				tt.counting = true;
-				Time.timeScale = 1;
 				MovieUI.SetActive (false);
 				player.GetComponent<Animator> ().SetTrigger ("trig");
+				player.GetComponent<Animator> ().SetTrigger ("CutSceneFin");
+				player.GetComponent<Animator> ().SetTrigger ("done");
 			}
 		}
 
-
-		if (!movie.isPlaying && !onetime) {
-			Time.timeScale = 1;
-			cd.counting = true;
-			tt.counting = true;
-			onetime = true;
-			MovieUI.SetActive (false);
-			player.GetComponent<Animator> ().SetTrigger ("trig");
-			player.GetComponent<Animator> ().SetTrigger ("CutSceneFin");
-		}
 
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag) && onetime) 
 		{
@@ -66,11 +64,14 @@ public class Movie : MonoBehaviour {
 			PlayClip ();
 		}
 
-		if (!movie.isPlaying && !onetime) {
-			Time.timeScale = 1;
-			player.GetComponent<Animator> ().SetTrigger ("done");
+		if (Input.GetMouseButton (0)) {
+			if (movie.isPlaying && MovieUI.activeSelf) {
+				cd.counting = true;
+				tt.counting = true;
+				Time.timeScale = 1;
+				MovieUI.SetActive (false);
+				player.GetComponent<Animator> ().SetTrigger ("trig");
+			}
 		}
-
-	
 	}
 }

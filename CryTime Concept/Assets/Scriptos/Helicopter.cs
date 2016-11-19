@@ -38,7 +38,6 @@ public class Helicopter : MonoBehaviour {
 		}
 
 		if (player.GetComponent<Animator>().GetCurrentAnimatorStateInfo (0).IsName (Location) && !done) {
-			Debug.Log ("hi");
 			done = true;
 			transform.GetComponent<Animator> ().SetTrigger ("Animate2");
 		}
