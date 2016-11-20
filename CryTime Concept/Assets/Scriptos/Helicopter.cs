@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Helicopter : MonoBehaviour {
 
+	public AudioClip explosionsound;
 	public GameObject Explosion;
 	public GameObject player;
 	public Rigidbody bullet;
@@ -26,10 +27,28 @@ public class Helicopter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		float dist = Vector3.Distance (player.transform.position, transform.position);
+		dist *= 10;
+		Debug.Log (dist);
+		if (dist <= 1000) {
+			transform.GetComponent<AudioSource> ().volume = .5f;
+		}
+		else if (dist <= 500) {  
+			transform.GetComponent<AudioSource> ().volume = .7f;
+		}
+		else if (dist <= 400) {  
+			transform.GetComponent<AudioSource> ().volume = 1;
+		}
+		else {
+			transform.GetComponent<AudioSource> ().volume = 0;
+		}
+
 		//if the helis health gets to 0, animate it crashing
 		if (Health <= 0 && !crashed) {
 			crashed = true;
 			transform.GetComponent<Animator> ().SetTrigger ("Crash");
+			transform.GetComponent<AudioSource> ().PlayOneShot (explosionsound);
 			Instantiate (Explosion, transform.position, Quaternion.Euler (270, 0, 0));
 		}
 
