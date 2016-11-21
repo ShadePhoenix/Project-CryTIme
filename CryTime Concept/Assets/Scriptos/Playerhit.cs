@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class Playerhit : MonoBehaviour {
 
+	public AudioClip damagesound;
 	public RawImage[] health;
 	public bool GameOver = false;
 	public GameObject GO;
@@ -64,6 +65,7 @@ public class Playerhit : MonoBehaviour {
 		//checks if bullets hit player
 		if (col.GetComponent<Collider>().tag == "Bullet") {
 			if (transform.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("OutOfCover")) {
+				transform.GetComponent<AudioSource> ().PlayOneShot (damagesound);
 				StartCoroutine ("bullethit");
 				transform.GetComponent<Animator> ().SetTrigger ("Default");
 				//sets the effect to be in full, meaning the camera will be very blury

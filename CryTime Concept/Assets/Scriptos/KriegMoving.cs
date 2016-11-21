@@ -3,6 +3,7 @@ using System.Collections;
 
 public class KriegMoving : MonoBehaviour {
 
+	public AudioClip ShootSound;
 	public Rigidbody bullet;
 	public GameObject Krieg;
 	public GameObject player;
@@ -171,6 +172,7 @@ public class KriegMoving : MonoBehaviour {
 			randx = Random.Range (Min, Max);
 			randy = Random.Range (Min, Max);
 			randz = Random.Range (Min, Max);
+			transform.GetComponent<AudioSource> ().PlayOneShot (ShootSound);
 			newbullet = Instantiate (bullet, gun.transform.position, gun.transform.rotation) as Rigidbody;
 			newbullet.velocity = ((player.transform.position + new Vector3 (randx, randy, randz)) - newbullet.transform.position).normalized * 50;
 			newbullet.transform.LookAt (player.transform.position);

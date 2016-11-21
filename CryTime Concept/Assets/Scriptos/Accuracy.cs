@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Accuracy : MonoBehaviour {
 
+	public BGMusic bgmusic;
 	public AudioClip completesound;
 	public TotalTime ttime;
 	public int ShotsFired;
@@ -124,6 +125,7 @@ public class Accuracy : MonoBehaviour {
 
 	IEnumerator showui ()
 	{
+		bgmusic.GetComponent<AudioSource> ().Stop ();
 		yield return new WaitForSecondsRealtime (1);
 		player.GetComponent<AudioSource> ().PlayOneShot (completesound);
 		StageResults.SetActive (true);
@@ -162,6 +164,9 @@ public class Accuracy : MonoBehaviour {
 		}
 
 		yield return new WaitForSecondsRealtime (4);
+		if (StageNum == 1) {
+			bgmusic.GetComponent<AudioSource> ().PlayOneShot (bgmusic.Area2Music);
+		}
 		//sets each variable to 0 upon starting a new stage
 		Tickets = 0;
 		minute = 0;

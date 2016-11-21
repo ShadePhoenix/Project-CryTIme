@@ -1138,9 +1138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponSkins:
-  - {fileID: 1000013744637454, guid: d2513343b277ec34abe64ad9b9d0861b, type: 2}
-  - {fileID: 1000012616698114, guid: e29543a1b3d855646b371321c2266794, type: 2}
-  - {fileID: 1000013118808346, guid: dc730b52fb11bd244aeaed0cc033f0a1, type: 2}
+  - {fileID: 1000013571511984, guid: f05fc93cf80781445afa2c2050bb23ab, type: 2}
+  - {fileID: 1000012779555496, guid: c90fa7ea6eaf26044becea4fa4b061c8, type: 2}
+  - {fileID: 1000011106673934, guid: 7acf6a42c962f6b4ea0c8f5c469f5c22, type: 2}
   weaponWheel: []
   spawnPoint: {fileID: 125171451}
   rotationSpeed: 1
