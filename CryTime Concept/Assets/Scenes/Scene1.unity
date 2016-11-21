@@ -259,8 +259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Duck
@@ -5615,8 +5615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -8819,8 +8819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -5
+  Max: 5
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -15413,8 +15413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -5
+  Max: 5
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -26147,7 +26147,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.540612
+      value: 11.33
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27520,7 +27520,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cd4fd4af1d0377c44971f31b3f3da195, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.036
+      value: -0.109
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cd4fd4af1d0377c44971f31b3f3da195, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36473,8 +36473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -37364,8 +37364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -46616,8 +46616,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -54157,8 +54157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -55507,14 +55507,14 @@ RectTransform:
   m_GameObject: {fileID: 1055919987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 29.033997}
-  m_LocalScale: {x: 0.6115268, y: 0.6536198, z: 0.9668466}
+  m_LocalScale: {x: 0.2922693, y: 0.31238696, z: 0.46208858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1187690269}
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288.5, y: -216.80444}
+  m_AnchoredPosition: {x: -317, y: 205}
   m_SizeDelta: {x: 489, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055919989
@@ -56060,7 +56060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.068445
+      value: 9.85
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.z
@@ -57842,8 +57842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -59402,7 +59402,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.58
+      value: 10.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.z
@@ -61297,8 +61297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -5
+  Max: 5
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -61547,7 +61547,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.068445
+      value: 9.85
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64779,8 +64779,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -71614,8 +71614,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -81430,8 +81430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -5
+  Max: 5
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -84747,8 +84747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -5
+  Max: 5
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -84931,8 +84931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 705559872}
   Trigger: Animate
@@ -87183,7 +87183,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cd4fd4af1d0377c44971f31b3f3da195, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.073
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cd4fd4af1d0377c44971f31b3f3da195, type: 3}
       propertyPath: m_LocalPosition.z
@@ -89028,14 +89028,14 @@ RectTransform:
   m_GameObject: {fileID: 1842665358}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 29.033997}
-  m_LocalScale: {x: 0.6115268, y: 0.6536198, z: 0.9668467}
+  m_LocalScale: {x: 0.2922693, y: 0.31238696, z: 0.4620886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1951218658}
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288.5, y: -216.80441}
+  m_AnchoredPosition: {x: -317, y: 205}
   m_SizeDelta: {x: 489, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842665360
@@ -91394,7 +91394,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.070733
+      value: 9.89
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.z
@@ -93406,15 +93406,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400018, guid: 256aea14afac278448dd6b0a959d7f12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.199
+      value: 0.2007
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 256aea14afac278448dd6b0a959d7f12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.040799998
+      value: -0.0426
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 256aea14afac278448dd6b0a959d7f12, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5802
+      value: -0.5782
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 256aea14afac278448dd6b0a959d7f12, type: 3}
       propertyPath: m_LocalRotation.x
@@ -101201,14 +101201,14 @@ RectTransform:
   m_GameObject: {fileID: 2115249534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 29.033997}
-  m_LocalScale: {x: 0.6115268, y: 0.6536198, z: 0.96684647}
+  m_LocalScale: {x: 0.2922693, y: 0.31238696, z: 0.46208853}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 722295658}
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288.5, y: -216.80444}
+  m_AnchoredPosition: {x: -317, y: 205}
   m_SizeDelta: {x: 489, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2115249536
@@ -101565,7 +101565,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.070733
+      value: 9.89
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120, type: 3}
       propertyPath: m_LocalPosition.z
