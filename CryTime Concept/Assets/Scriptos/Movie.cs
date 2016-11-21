@@ -16,7 +16,7 @@ public class Movie : MonoBehaviour {
 	RawImage rawImageComp;
 	public AudioSource audioS;
 
-	bool onetime = true;
+	public bool onetime = true;
 
 	// Use this for initialization
 	void Start () {
@@ -49,12 +49,23 @@ public class Movie : MonoBehaviour {
 				player.GetComponent<Animator> ().SetTrigger ("trig");
 				player.GetComponent<Animator> ().SetTrigger ("CutSceneFin");
 				player.GetComponent<Animator> ().SetTrigger ("done");
-				if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("CutSceneDown1")) {
+			}
+		}
+
+//		if (MovieUI.name == "FinalStage") {
+//			if (MovieUI.activeSelf) {
+//				Time.timeScale = 0;
+//			}
+//		}
+
+		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("GameDone")) {
+			if (MovieUI.name == "FinalScene") {
+				if (!MovieUI.activeSelf) {
+					Debug.Log ("hi");
 					SceneManager.LoadScene ("Main Menu");
 				}
 			}
 		}
-
 
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag) && onetime) 
 		{
