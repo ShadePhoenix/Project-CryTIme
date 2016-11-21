@@ -23,9 +23,12 @@ public class BGMusic : MonoBehaviour {
 			played = false;
 			transform.GetComponent<AudioSource> ().PlayOneShot (Area1Music);
 		}
-		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("CutScene") && played2) {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("CutSceneDown1") && played2) {
 			played2 = false;
 			transform.GetComponent<AudioSource> ().PlayOneShot (BossMusic);
+		}
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("CutScene3")) {
+			transform.GetComponent<AudioSource> ().Stop ();
 		}
 	}
 }

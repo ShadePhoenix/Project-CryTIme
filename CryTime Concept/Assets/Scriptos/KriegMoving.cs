@@ -77,6 +77,7 @@ public class KriegMoving : MonoBehaviour {
 		}
 		if (health < 15) {
 			player.GetComponent<Animator> ().SetTrigger ("FinalTrigger");
+			transform.gameObject.SetActive (false);
 		}
 	
 	}

@@ -179,7 +179,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: 8d2025a1a6380f8428ab7554f4c4bea7, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []
@@ -346,7 +346,8 @@ PlayerSettings:
     2: CROSS_PLATFORM_INPUT
     4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    14: MOBILE_INPUT
+    13: 
+    14: MOBILE_INPUT;CROSS_PLATFORM_INPUT
     15: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     16: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     17: MOBILE_INPUT
@@ -470,7 +471,7 @@ PlayerSettings:
   SamsungTV::VR::enable: 0
   Standalone::VR::enable: 1
   Tizen::VR::enable: 0
-  WebGL::VR::enable: 0
+  WebGL::VR::enable: 1
   WebGL::analyzeBuildSize: 0
   WebGL::dataCaching: 0
   WebGL::useEmbeddedResources: 0
