@@ -167,9 +167,6 @@ public class Accuracy : MonoBehaviour {
 		if (StageNum == 1) {
 			bgmusic.GetComponent<AudioSource> ().PlayOneShot (bgmusic.Area2Music);
 		}
-		if (StageNum == 2) {
-			bgmusic.GetComponent<AudioSource> ().PlayOneShot (bgmusic.BossMusic);
-		}
 		//sets each variable to 0 upon starting a new stage
 		Tickets = 0;
 		minute = 0;

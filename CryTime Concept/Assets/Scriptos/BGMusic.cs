@@ -10,6 +10,7 @@ public class BGMusic : MonoBehaviour {
 
 	Animator anim;
 	bool played = true;
+	bool played2 = true;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,10 @@ public class BGMusic : MonoBehaviour {
 		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Anim1") && played) {
 			played = false;
 			transform.GetComponent<AudioSource> ().PlayOneShot (Area1Music);
+		}
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("CutScene") && played2) {
+			played2 = false;
+			transform.GetComponent<AudioSource> ().PlayOneShot (BossMusic);
 		}
 	}
 }

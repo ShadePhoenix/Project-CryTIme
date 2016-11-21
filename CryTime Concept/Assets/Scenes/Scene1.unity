@@ -36819,6 +36819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebe4bfee88eda64fbacb968e2b4be74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damagesound: {fileID: 8300000, guid: 9306f038c0be5234c828c295bec45ce3, type: 3}
   health:
   - {fileID: 1047667393}
   - {fileID: 58989109}
