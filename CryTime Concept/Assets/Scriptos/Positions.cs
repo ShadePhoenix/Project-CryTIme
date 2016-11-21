@@ -5,6 +5,7 @@ using System;
 
 public class Positions : MonoBehaviour {
 
+	public AudioClip jetmove;
 	public GameObject player;
 	public RawImage Engage;
 	bool end = false;
@@ -61,6 +62,9 @@ public class Positions : MonoBehaviour {
 					}
 				}
 				foreach (GameObject obj in objects) {
+					if (obj.name == "Jet4") {
+						obj.GetComponent<AudioSource> ().PlayOneShot (jetmove);
+					}
 					obj.GetComponent<Animator> ().SetTrigger (Trigger);
 				}
 				foreach (GameObject enemy in nextenemies) {
