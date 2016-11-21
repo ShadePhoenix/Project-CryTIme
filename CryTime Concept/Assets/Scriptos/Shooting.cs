@@ -27,6 +27,10 @@ public class Shooting : MonoBehaviour {
 	public Accuracy accuracy;
 	public GameObject Krieg;
 	public AudioClip ReloadSpeak;
+	public AudioClip EnemyDeathSound1;
+	public AudioClip EnemyDeathSound2;
+	public AudioClip EnemyDeathSound3;
+	public AudioClip EnemyDeathSound4;
 	Ray RayInGame;
 	bool removeReload;
 
@@ -176,6 +180,11 @@ public class Shooting : MonoBehaviour {
 
 	IEnumerator die (GameObject enemy)
 	{
+		int r = UnityEngine.Random.Range (0, 4);
+		if (r == 0) { enemy.GetComponent<AudioSource> ().PlayOneShot (EnemyDeathSound1); }
+		if (r == 1) { enemy.GetComponent<AudioSource> ().PlayOneShot (EnemyDeathSound2); }
+		if (r == 2) { enemy.GetComponent<AudioSource> ().PlayOneShot (EnemyDeathSound3); }
+		if (r == 3) { enemy.GetComponent<AudioSource> ().PlayOneShot (EnemyDeathSound4); }
 		enemy.GetComponent<EnemyScript> ().Enemy.GetComponent<Animator>().SetTrigger("Death");
 		yield return new WaitForSeconds (.5f);
 		enemy.gameObject.SetActive (false);
