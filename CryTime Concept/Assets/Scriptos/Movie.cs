@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Movie : MonoBehaviour {
 
@@ -48,6 +49,9 @@ public class Movie : MonoBehaviour {
 				player.GetComponent<Animator> ().SetTrigger ("trig");
 				player.GetComponent<Animator> ().SetTrigger ("CutSceneFin");
 				player.GetComponent<Animator> ().SetTrigger ("done");
+				if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("CutSceneDown1")) {
+					SceneManager.LoadScene ("Main Menu");
+				}
 			}
 		}
 

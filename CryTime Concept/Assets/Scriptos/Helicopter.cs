@@ -30,7 +30,6 @@ public class Helicopter : MonoBehaviour {
 
 		float dist = Vector3.Distance (player.transform.position, transform.position);
 		dist *= 10;
-		Debug.Log (dist);
 		if (dist <= 1000) {
 			transform.GetComponent<AudioSource> ().volume = .5f;
 		}
