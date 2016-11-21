@@ -13441,6 +13441,7 @@ MonoBehaviour:
   tt: {fileID: 2000990624}
   cd: {fileID: 1007751442}
   audioS: {fileID: 705559873}
+  onetime: 1
 --- !u!114 &237255405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13460,6 +13461,7 @@ MonoBehaviour:
   tt: {fileID: 2000990624}
   cd: {fileID: 1007751442}
   audioS: {fileID: 705559873}
+  onetime: 1
 --- !u!114 &237255406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13491,6 +13493,7 @@ MonoBehaviour:
   tt: {fileID: 2000990624}
   cd: {fileID: 1007751442}
   audioS: {fileID: 705559873}
+  onetime: 1
 --- !u!1 &240834339 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: cd4fd4af1d0377c44971f31b3f3da195, type: 3}
@@ -16039,7 +16042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1454257389}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 11, y: -235}
@@ -30063,7 +30066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1454257389}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 11, y: -297}
@@ -33362,7 +33365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1454257389}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 6, y: -53}
@@ -33563,21 +33566,21 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &668890910
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 668890909}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1414096999}
   m_Father: {fileID: 1454257389}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -130, y: -36}
@@ -36991,6 +36994,8 @@ MonoBehaviour:
   - {fileID: 1596307452}
   GameOver: 0
   GO: {fileID: 1454257388}
+  button1: {fileID: 668890909}
+  button2: {fileID: 925347828}
   playercamera: {fileID: 733524663}
   hit: {fileID: 1847495268}
 --- !u!143 &705559876
@@ -49074,7 +49079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &925347829
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49088,7 +49093,7 @@ RectTransform:
   m_Children:
   - {fileID: 1823716957}
   m_Father: {fileID: 1454257389}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 144, y: -36}
@@ -70879,11 +70884,11 @@ RectTransform:
   m_Children:
   - {fileID: 2115219591}
   - {fileID: 1516659005}
-  - {fileID: 668890910}
-  - {fileID: 925347829}
   - {fileID: 663212713}
   - {fileID: 307252861}
   - {fileID: 583160319}
+  - {fileID: 668890910}
+  - {fileID: 925347829}
   m_Father: {fileID: 237255398}
   m_RootOrder: 12
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -70907,6 +70912,8 @@ MonoBehaviour:
   ContinuesText: {fileID: 307252863}
   player: {fileID: 705559872}
   Overalltime: {fileID: 1007751442}
+  button1: {fileID: 668890909}
+  button2: {fileID: 925347828}
 --- !u!1 &1455601433
 GameObject:
   m_ObjectHideFlags: 0
@@ -96301,6 +96308,8 @@ MonoBehaviour:
   health: 60
   countdown: {fileID: 1007751442}
   addtime: {fileID: 1007751445}
+  Krieg1time: 10
+  Krieg2time: 10
 --- !u!95 &1987922607
 Animator:
   serializedVersion: 3

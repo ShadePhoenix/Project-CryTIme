@@ -10,8 +10,10 @@ public class Continue : MonoBehaviour {
 	public Text ContinuesText;
 	public GameObject player;
 	public CountDown Overalltime;
+	public GameObject button1;
+	public GameObject button2;
 
-	float time = 10;
+	float time = 20;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +30,9 @@ public class Continue : MonoBehaviour {
 			if (time >= 0) {
 				time = time - Time.deltaTime * 10000;
 				Seconds.text = "" + Mathf.Round (time);
-			} 
+			} else {
+				SceneManager.LoadScene ("Main Menu");
+			}
 
 		}
 	
@@ -44,6 +48,8 @@ public class Continue : MonoBehaviour {
 			gameObject.SetActive (false);
 			time = 10;
 			Overalltime.count = 59;
+			button1.SetActive (false);
+			button2.SetActive (false);
 		}
 	}
 

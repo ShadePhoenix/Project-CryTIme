@@ -61,7 +61,6 @@ public class Movie : MonoBehaviour {
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("GameDone")) {
 			if (MovieUI.name == "FinalScene") {
 				if (!MovieUI.activeSelf) {
-					Debug.Log ("hi");
 					SceneManager.LoadScene ("Main Menu");
 				}
 			}

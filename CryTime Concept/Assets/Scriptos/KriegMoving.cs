@@ -13,6 +13,8 @@ public class KriegMoving : MonoBehaviour {
 	public int health = 60;
 	public CountDown countdown;
 	public AddTime addtime;
+	public int Krieg1time;
+	public int Krieg2time;
 
 	bool firstpoint = false;
 	bool secondpoint = false;
@@ -103,7 +105,7 @@ public class KriegMoving : MonoBehaviour {
 			StartCoroutine (co);
 		}
 		if (health > 34 && health < 40) {
-			countdown.count += 10;
+			countdown.count += Krieg1time;
 			StartCoroutine (addtime.Extend ());
 			transform.GetComponent<Animator> ().SetTrigger ("Down4");
 			transform.GetComponent<Animator> ().SetTrigger ("Up4");
@@ -127,7 +129,7 @@ public class KriegMoving : MonoBehaviour {
 		}
 		if (health > 19 && health < 25) {
 			StartCoroutine (addtime.Extend ());
-			countdown.count += 10;
+			countdown.count += Krieg1time;
 			transform.GetComponent<Animator> ().SetTrigger ("Down7");
 			transform.GetComponent<Animator> ().SetTrigger ("Up7");
 			StopCoroutine (co);

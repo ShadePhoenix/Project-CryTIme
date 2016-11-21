@@ -8,6 +8,8 @@ public class Playerhit : MonoBehaviour {
 	public RawImage[] health;
 	public bool GameOver = false;
 	public GameObject GO;
+	public GameObject button1;
+	public GameObject button2;
 	public GameObject playercamera;
 	bool fade = false;
 	public RawImage hit;
@@ -46,8 +48,16 @@ public class Playerhit : MonoBehaviour {
 			GameOver = false;
 			GO.SetActive(true);
 			Time.timeScale = 0.0001f;
+			StartCoroutine (wait ());
 
 		}
+	}
+
+	IEnumerator wait ()
+	{
+		yield return new WaitForSecondsRealtime (1);
+		button1.SetActive (true);
+		button2.SetActive (true);
 	}
 
 	public void Continue()
