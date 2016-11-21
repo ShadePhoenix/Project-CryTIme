@@ -51817,6 +51817,8 @@ MonoBehaviour:
   count: 65
   player: {fileID: 705559872}
   GO: {fileID: 1454257388}
+  button1: {fileID: 668890909}
+  button2: {fileID: 925347828}
   counting: 1
 --- !u!114 &1007751443
 MonoBehaviour:
@@ -70914,6 +70916,7 @@ MonoBehaviour:
   Overalltime: {fileID: 1007751442}
   button1: {fileID: 668890909}
   button2: {fileID: 925347828}
+  time: 20
 --- !u!1 &1455601433
 GameObject:
   m_ObjectHideFlags: 0

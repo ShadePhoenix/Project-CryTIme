@@ -13,11 +13,12 @@ public class Continue : MonoBehaviour {
 	public GameObject button1;
 	public GameObject button2;
 
-	float time = 20;
+	public float time = 20;
+	float origtime;
 
 	// Use this for initialization
 	void Start () {
-
+		origtime = time;
 		//this.gameObject.SetActive (false);
 
 	}
@@ -30,7 +31,9 @@ public class Continue : MonoBehaviour {
 			if (time >= 0) {
 				time = time - Time.deltaTime * 10000;
 				Seconds.text = "" + Mathf.Round (time);
-			} else {
+			} 
+			if (time <= 0)
+			{
 				SceneManager.LoadScene ("Main Menu");
 			}
 
@@ -46,7 +49,7 @@ public class Continue : MonoBehaviour {
 			Continues = Continues - 1;
 			player.GetComponent<Playerhit> ().Continue ();
 			gameObject.SetActive (false);
-			time = 10;
+			time = origtime;
 			Overalltime.count = 59;
 			button1.SetActive (false);
 			button2.SetActive (false);

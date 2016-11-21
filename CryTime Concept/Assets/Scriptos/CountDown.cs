@@ -8,6 +8,8 @@ public class CountDown : MonoBehaviour {
 	public float count = 60;
 	public GameObject player;
 	public GameObject GO;
+	public GameObject button1;
+	public GameObject button2;
 
 	public bool counting = true;
 
@@ -36,6 +38,8 @@ public class CountDown : MonoBehaviour {
 
 			} else {
 				GO.SetActive (true);
+				button1.SetActive (true);
+				button2.SetActive (true);
 				//the reason for setting the timescale to .0001 is so that there can be a counter in the game over screen
 				Time.timeScale = 0.0001f;
 				player.GetComponent<Playerhit> ().GameOver = true;
