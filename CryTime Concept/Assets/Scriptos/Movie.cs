@@ -39,6 +39,21 @@ public class Movie : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("GameDone")) {
+			if (MovieUI.name == "FinalScene") {
+				if (!MovieUI.activeSelf) {
+					SceneManager.LoadScene ("Main Menu");
+				}
+			}
+		}
+		if (MovieUI.name == "FinalScene") {
+			if (MovieUI.activeSelf) {
+				if (!movie.isPlaying) {
+					MovieUI.SetActive (false);
+				}
+			}
+		}
+
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag)) {
 			if (movie.isPlaying == false && !onetime) {
 				StartCoroutine (wait ());
@@ -57,15 +72,6 @@ public class Movie : MonoBehaviour {
 //				Time.timeScale = 0;
 //			}
 //		}
-
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("GameDone")) {
-			if (MovieUI.name == "FinalScene") {
-				if (!MovieUI.activeSelf) {
-					SceneManager.LoadScene ("Main Menu");
-				}
-			}
-		}
-
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag) && onetime) 
 		{
 			Time.timeScale = 0;
