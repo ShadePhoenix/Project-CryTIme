@@ -17,6 +17,7 @@ public class AddTime : MonoBehaviour {
 	}
 
 	public Stage[] stages;
+	public AudioClip extendedsound;
 
 	public CountDown time;
 	public RawImage Extended;
@@ -29,6 +30,7 @@ public class AddTime : MonoBehaviour {
 
 	public IEnumerator Extend()
 	{
+		transform.GetComponent<AudioSource> ().PlayOneShot (extendedsound);
 		Extended.gameObject.SetActive (true);
 		yield return new WaitForSeconds (1);
 		Extended.gameObject.SetActive (false);
