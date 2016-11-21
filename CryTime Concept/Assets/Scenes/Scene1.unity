@@ -2111,8 +2111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -6044,8 +6044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -8820,8 +8820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -6
+  Max: 6
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -13550,8 +13550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -15415,8 +15415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -6
+  Max: 6
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -16996,8 +16996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -19857,8 +19857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -2
+  Max: 2
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -20722,8 +20722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -21116,8 +21116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -28358,8 +28358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -30
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -35954,8 +35954,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Duck
@@ -36482,8 +36482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -2
+  Max: 2
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -37376,8 +37376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -2
+  Max: 2
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -39026,8 +39026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -45548,8 +45548,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -51709,7 +51709,7 @@ MonoBehaviour:
     - {fileID: 1040362648}
     - {fileID: 101809259}
     - {fileID: 1123270737}
-    time: 11
+    time: 10
     com: 0
     done: 0
   - objects:
@@ -51717,7 +51717,7 @@ MonoBehaviour:
     - {fileID: 72892303}
     - {fileID: 2006336935}
     - {fileID: 277214462}
-    time: 7
+    time: 15
     com: 0
     done: 0
   - objects:
@@ -51740,21 +51740,21 @@ MonoBehaviour:
     - {fileID: 891484418}
     - {fileID: 674919535}
     - {fileID: 1914762718}
-    time: 12
+    time: 20
     com: 0
     done: 0
   - objects:
     - {fileID: 1824339931}
     - {fileID: 243106494}
     - {fileID: 374958966}
-    time: 4
+    time: 8
     com: 0
     done: 0
   - objects:
     - {fileID: 386899052}
     - {fileID: 958593641}
     - {fileID: 1707811170}
-    time: 6
+    time: 10
     com: 0
     done: 0
   - objects:
@@ -51770,13 +51770,13 @@ MonoBehaviour:
     - {fileID: 477151235}
     - {fileID: 1964852549}
     - {fileID: 1317454415}
-    time: 6
+    time: 7
     com: 0
     done: 0
   - objects:
     - {fileID: 1281166672}
     - {fileID: 44570172}
-    time: 4
+    time: 7
     com: 0
     done: 0
   - objects:
@@ -51792,13 +51792,13 @@ MonoBehaviour:
     - {fileID: 787576397}
     - {fileID: 1387438396}
     - {fileID: 501240491}
-    time: 6
+    time: 11
     com: 0
     done: 0
   - objects:
     - {fileID: 1573070135}
     - {fileID: 769208485}
-    time: 4
+    time: 12
     com: 0
     done: 0
   - objects:
@@ -51809,7 +51809,7 @@ MonoBehaviour:
     - {fileID: 845964242}
     - {fileID: 1475796457}
     - {fileID: 435441853}
-    time: 9
+    time: 15
     com: 0
     done: 0
   - objects:
@@ -51817,7 +51817,7 @@ MonoBehaviour:
     - {fileID: 1287171330}
     - {fileID: 117068279}
     - {fileID: 1085099708}
-    time: 8
+    time: 10
     com: 0
     done: 0
   - objects:
@@ -51827,13 +51827,13 @@ MonoBehaviour:
     - {fileID: 1456868916}
     - {fileID: 206490151}
     - {fileID: 567541611}
-    time: 4
+    time: 8
     com: 0
     done: 0
   - objects:
     - {fileID: 176428563}
     - {fileID: 423100362}
-    time: 4
+    time: 6
     com: 0
     done: 0
   - objects:
@@ -51845,7 +51845,7 @@ MonoBehaviour:
     done: 0
   - objects:
     - {fileID: 1290169048}
-    time: 7
+    time: 10
     com: 0
     done: 0
   extendedsound: {fileID: 8300000, guid: 995a1393ab7f1e246aa5a74620dd4802, type: 3}
@@ -54320,8 +54320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -4
-  Max: 4
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -58005,8 +58005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -4
-  Max: 4
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -61460,8 +61460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -6
+  Max: 6
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -62388,8 +62388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -64537,9 +64537,9 @@ MonoBehaviour:
   Gun: {fileID: 501468496}
   Gun2: {fileID: 790433541}
   Location: Tower13Anim
-  Health: 10
-  Min: -10
-  Max: 10
+  Health: 20
+  Min: -8
+  Max: 8
 --- !u!65 &1290169052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72338,8 +72338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -75615,8 +75615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Duck
@@ -78836,8 +78836,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Duck
@@ -81790,8 +81790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -6
+  Max: 6
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -84309,8 +84309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -2
-  Max: 2
+  Min: -3
+  Max: 3
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Crouch
@@ -85107,8 +85107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -5
-  Max: 5
+  Min: -6
+  Max: 6
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: Animate
@@ -86861,8 +86861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
@@ -96278,8 +96278,8 @@ MonoBehaviour:
   Krieg: {fileID: 822657918}
   player: {fileID: 705559872}
   gun: {fileID: 1308055021}
-  Min: -1
-  Max: 1
+  Min: -2
+  Max: 2
   health: 60
   countdown: {fileID: 1007751442}
   addtime: {fileID: 1007751445}
@@ -99113,8 +99113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cc0cce38c759f4abc2d2a991171e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Min: -3
-  Max: 3
+  Min: -4
+  Max: 4
   bullet: {fileID: 1334620306}
   player: {fileID: 1662035693}
   Trigger: 
