@@ -51920,7 +51920,7 @@ MonoBehaviour:
     - {fileID: 891484418}
     - {fileID: 674919535}
     - {fileID: 1914762718}
-    time: 20
+    time: 50
     com: 0
     done: 0
   - objects:
@@ -52020,7 +52020,7 @@ MonoBehaviour:
     - {fileID: 1118709680}
     - {fileID: 765627455}
     - {fileID: 1428443573}
-    time: 7
+    time: 50
     com: 0
     done: 0
   - objects:
