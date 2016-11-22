@@ -33419,7 +33419,7 @@ MonoBehaviour:
   - {fileID: 821414839}
   - {fileID: 507372460}
   - {fileID: 1769326115}
-  can: {fileID: 0}
+  can: {fileID: 237255400}
 --- !u!4 &695610562
 Transform:
   m_ObjectHideFlags: 0

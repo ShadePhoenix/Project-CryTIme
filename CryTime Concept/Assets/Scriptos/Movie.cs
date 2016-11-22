@@ -18,10 +18,18 @@ public class Movie : MonoBehaviour {
 	public AudioSource audioS;
 
 	public bool onetime = true;
+	bool canskip = false;
 
 	// Use this for initialization
 	void Start () {
+		StartCoroutine (canshootslip ());
 		Time.timeScale = 0;
+	}
+
+	IEnumerator canshootslip()
+	{
+		yield return new WaitForSecondsRealtime (7);
+		canskip = true;
 	}
 
 	void PlayClip()
@@ -81,8 +89,7 @@ public class Movie : MonoBehaviour {
 //				Time.timeScale = 0;
 //			}
 //		}
-		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag) && onetime) 
-		{
+		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag (Tag) && onetime) {
 			Time.timeScale = 0;
 			cd.counting = false;
 			tt.counting = false;
@@ -92,14 +99,15 @@ public class Movie : MonoBehaviour {
 			audioS = img.GetComponent<AudioSource> ();
 			PlayClip ();
 		}
-
-		if (Input.GetMouseButton (0)) {
-			if (movie.isPlaying && MovieUI.activeSelf) {
-				cd.counting = true;
-				tt.counting = true;
-				Time.timeScale = 1;
-				MovieUI.SetActive (false);
-				player.GetComponent<Animator> ().SetTrigger ("trig");
+		if (canskip) {
+			if (Input.GetMouseButton (0)) {
+				if (movie.isPlaying && MovieUI.activeSelf) {
+					cd.counting = true;
+					tt.counting = true;
+					Time.timeScale = 1;
+					MovieUI.SetActive (false);
+					player.GetComponent<Animator> ().SetTrigger ("trig");
+				}
 			}
 		}
 	}
