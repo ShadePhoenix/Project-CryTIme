@@ -8,21 +8,23 @@ public class PCorVR : MonoBehaviour {
 	public Canvas UI;
 	public Camera PCcam;
 	public GameObject[] objects;
+	public CanvasScaler can;
 
 
 	// Use this for initialization
 	void Start () {
 		UnityEngine.VR.VRSettings.enabled = true;
 
-		if (UnityEngine.VR.VRSettings.enabled)
+		if (!UnityEngine.VR.VRSettings.enabled)
 		{
             foreach (GameObject obj in objects) {
 				if (obj.layer == 10) {
-					obj.gameObject.SetActive (true);
+					obj.gameObject.SetActive (false);
 				}
 			}
-			UI.renderMode = RenderMode.ScreenSpaceCamera;
-			PCcam.gameObject.SetActive (false);
+			UI.renderMode = RenderMode.ScreenSpaceOverlay;
+			PCcam.gameObject.SetActive (true);
+			can.referenceResolution = new Vector2 (800, 600);
 		} 
 	
 	}
@@ -31,13 +33,5 @@ public class PCorVR : MonoBehaviour {
 	void Update () {
 	}
 
-	public void IFVR()
-	{
-		if (transform.GetComponent<Dropdown> ().value == 0) {
-			vrON = false;
-		} else {
-			vrON = true;
-		}
-	}
 
 }

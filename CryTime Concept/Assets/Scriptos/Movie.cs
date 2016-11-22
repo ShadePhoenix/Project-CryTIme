@@ -12,6 +12,7 @@ public class Movie : MonoBehaviour {
 	public string Tag;
 	public TotalTime tt;
 	public CountDown cd;
+	public GameObject[] cutscenes;
 
 	RawImage rawImageComp;
 	public AudioSource audioS;
@@ -39,6 +40,14 @@ public class Movie : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		foreach (GameObject cutscene in cutscenes) {
+			if (cutscene.activeSelf) {
+				transform.GetComponent<Pause> ().canpause = false;
+				break;
+			} else {
+				transform.GetComponent<Pause> ().canpause = true;
+			}
+		}
 		if (player.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsTag ("GameDone")) {
 			if (MovieUI.name == "FinalScene") {
 				if (!MovieUI.activeSelf) {

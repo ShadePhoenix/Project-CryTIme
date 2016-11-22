@@ -11,6 +11,7 @@ public class Pause : MonoBehaviour {
 	public GameObject vrplayer;
 	public GameObject Options;
 	public GameObject exit;
+	public bool canpause = true;
 
 	public Toggle Audio;
 	public Toggle fullscreen;
@@ -46,16 +47,17 @@ public class Pause : MonoBehaviour {
 		} else {
 			Screen.SetResolution (1920, 1080, false);
 		}
-
-		if (Input.GetKeyDown (KeyCode.Escape)) {
-			if (!clicked) {
-				clicked = true;
-				PauseMenu.SetActive (true);
-				Time.timeScale = 0;
-			} else {
-				clicked = false;
-				PauseMenu.SetActive (false);
-				Time.timeScale = 1;
+		if (canpause) {
+			if (Input.GetKeyDown (KeyCode.Escape)) {
+				if (!clicked) {
+					clicked = true;
+					PauseMenu.SetActive (true);
+					Time.timeScale = 0;
+				} else {
+					clicked = false;
+					PauseMenu.SetActive (false);
+					Time.timeScale = 1;
+				}
 			}
 		}
 	
